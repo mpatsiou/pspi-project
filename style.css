@@ -1,70 +1,24 @@
-body {
-  background-image: url('./peace.jpg');
-  bac
-  background-size: 60%;
-  background-repeat: repeat-y;
+#welcome {
+  padding-top: 25%;
+  font-size: 50px;
+  color: #333;
+  font-family: 'Poppins-Bold';
+  font-weight: bold;
 }
-#sign-in-form {
-  position: fixed;
-  top: 10%;
-  left: 72%;
+
+#introduction {
+  font-size: 25px;
 }
-.box {
-  width: 120%;
-  border-radius: 2%;
-  padding:24px 24px 16px 24px;
-  background: rgba(0,0,0,.9);
-  color: #fff;
+
+#signup-form submit:hover {
+  border-radius: 30px;
+  background: -webkit-linear-gradient(bottom, #7579ff, #b224ef);
+  border: 0px;
 }
-.box h2 {
-  color: #00a4a2;
-  font-size: 30px;
-}
-#username , #user-password{
-  color: #00a4a2;
-  background: #222;
-}
-.box label {
-  color: #00a4a2;
-  margin-bottom: 0px;
-}
-.box button {
-  font-size: 16px;
-  text-size: 16px;
-  background: #00a4a2;
-}
-#forgot-password{
-  text-decoration: underline;
-  cursor: pointer;
-  font-size: 15px;
-  color: #00a4a2;
-}
-#not-member {
-  font-size: 15px;
-}
-#sign-up {
-  cursor: pointer;
-  color: #00a5a0;
-}
-.list {
-  padding-left: 0px;
-}
-.list li{
-  list-style-type: none;
-  padding: 0% 10% 3% 10%;
-}
-#media {
-  color: #00a5a0;
-}
-#fb {
-  background-color: #3B5998;
-  color: white;
-}
-#twitter {
-  background-color: #55ACEE;
-  color: white;
-}
-#google {
-  background-color: #dd4b39;
-  color: white;
+
+#signup-form submit {
+  transition: 2s background-color;
+  border-radius: 30px;
+  background: black;
+  border: 0px;
 }
