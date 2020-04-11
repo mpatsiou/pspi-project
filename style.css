@@ -1,24 +1,25 @@
 body {
-  background-image: url(peace.jpg);
-  background-repeat: repeat-y;
+  background-image: url('./peace.jpg');
   background-size: 70%;
+  background-repeat: repeat-y;
+}
+#sign-in-form {
   position: fixed;
   top: 10%;
-  left: 70%;
+  left: 72%;
 }
 .box {
   width: 120%;
-  border-radius: 2%p;
+  border-radius: 2%;
   padding:24px 24px 16px 24px;
   background: rgba(0,0,0,.9);
   color: #fff;
 }
 .box h2 {
   color: #00a4a2;
-  text-align: center;
-  font-size: 30;
+  font-size: 30px;
 }
-#exampleInputUser1 , #exampleInputPassword1{
+#username , #user-password{
   color: #00a4a2;
   background: #222;
 }
@@ -28,21 +29,19 @@ body {
 }
 .box button {
   font-size: 16px;
-  text-size:16px;
+  text-size: 16px;
   background: #00a4a2;
 }
-#password{
+#forgot-password{
   text-decoration: underline;
   cursor: pointer;
-  text-align: center;
   font-size: 15px;
   color: #00a4a2;
 }
-#sign-up {
-  text-align: center;
+#not-member {
   font-size: 15px;
 }
-span {
+#sign-up {
   cursor: pointer;
   color: #00a5a0;
 }
@@ -51,10 +50,9 @@ span {
 }
 .list li{
   list-style-type: none;
-  padding: 0 10% 3% 10%;
+  padding: 0% 10% 3% 10%;
 }
 #media {
-  text-align: center;
   color: #00a5a0;
 }
 #fb {
