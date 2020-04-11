@@ -1,28 +1,41 @@
 </<!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css "href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="style.css" />
-        <title></title>
-    </head>
-    <body>
-        <div class="box">
-          <h2>Sign in</h2>
-          <form>
-              <div class = "form-group">
-                  <input type="user" class="form-control" id="exampleInputUser1" placeholder="User Name" >
-              </div>
-              <div class="form-group">
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" >
-              </div>
-              <div class = "form-group">
-                  <button type="submit" class="btn btn-primary btn-lg btn-block">Sign in</button>
-              </div>
-              <p>Forgot Password?</p>
-          </form>
-        </div>
-        <p>Not a member? <span>Sign up</span>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css "href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title></title>
+  </head>
 
-    </body>
+  <body>
+    <div class="box">
+      <h2>Sign in</h2>
+      <form>
+        <div class = "form-group">
+          <input type="user" class="form-control" id="exampleInputUser1" placeholder="User Name" >
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" >
+        </div>
+        <div class = "form-group">
+          <button type="submit" class="btn btn-primary btn-lg btn-block">Sign in</button>
+        </div>
+        <p id="password">Forgot Password?</p>
+      </form>
+    </div>
+    <p id="sign-up">Not a member? <span>Sign up</span>
+
+    <div class="box">
+      <div class="sticky-top"><h3 id="media">Log in with:</h3> </div>
+      <ul class="list">
+        <li><button type="button" class="btn btn-primary btn-lg btn-block" id="fb">Facebook     <i class="fa fa-facebook-square" style="font-size:24px"></i>
+        </button></li>
+        <li><button type="button" class="btn btn-primary btn-lg btn-block" id="tw">Twitter     <i class="fa fa-twitter" style="font-size:24px"></i>
+        </button></li>
+        <li><button type="button" class="btn btn-primary btn-lg btn-block" id="google">Google+      <i class="fa fa-google-plus-official" style="font-size:24px"></i>
+        </button></li>
+      </ul>
+    </div>
+  </body>
 </html>
