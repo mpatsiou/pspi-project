@@ -1,15 +1,15 @@
 body {
   background-image: url(peace.jpg);
   background-repeat: repeat-y;
+  background-size: 70%;
   position: fixed;
-  top: 30%;
-  left: 65%;
+  top: 10%;
+  left: 70%;
 }
 .box {
-  width: 350px;
-  border-radius:6px;
-  margin: 0 auto 0 auto;
-  padding:32px 24px 32px 24px;
+  width: 120%;
+  border-radius: 2%p;
+  padding:24px 24px 16px 24px;
   background: rgba(0,0,0,.9);
   color: #fff;
 }
@@ -31,15 +31,41 @@ body {
   text-size:16px;
   background: #00a4a2;
 }
-.box p {
+#password{
   text-decoration: underline;
   cursor: pointer;
+  text-align: center;
+  font-size: 15px;
+  color: #00a4a2;
 }
-p {
+#sign-up {
   text-align: center;
   font-size: 15px;
 }
 span {
   cursor: pointer;
   color: #00a5a0;
+}
+.list {
+  padding-left: 0px;
+}
+.list li{
+  list-style-type: none;
+  padding: 0 10% 3% 10%;
+}
+#media {
+  text-align: center;
+  color: #00a5a0;
+}
+#fb {
+  background-color: #3B5998;
+  color: white;
+}
+#twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+#google {
+  background-color: #dd4b39;
+  color: white;
 }
