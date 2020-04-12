@@ -1,0 +1,45 @@
+
+#introduction {
+  font-size: 25px;
+  font-style: italic;
+}
+
+#welcome {
+  padding-top: 5%;
+  font-size: 50px;
+  color: #333;
+  font-family: 'Poppins-Bold';
+  font-weight: bold;
+}
+
+body {
+  background: url("./background.jpg");
+  background-position: center;
+  background-size: 100%;
+}
+
+.form submit{
+  margin-top: 5%;
+}
+.bg-light {
+  border-bottom: solid;
+  border-bottom-width: thin;
+  color: #6a86a2;
+  padding: 2px 4px 0px 4px;
+}
+
+#wrapper {
+  height: 100px;
+}
+
+.row {
+  margin: 0px 0px 0px 0px;
+}
+
+#peace-icon {
+  width: 30px;
+}
+
+#navbar-menu {
+  padding-left: 20px;
+}
