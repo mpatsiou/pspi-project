@@ -1,5 +1,5 @@
 #welcome {
-  padding-top: 25%;
+  padding-top: 15%;
   font-size: 50px;
   color: #333;
   font-family: 'Poppins-Bold';
@@ -10,15 +10,32 @@
   font-size: 25px;
 }
 
-#signup-form submit:hover {
+#signup-form submit:hover, #login-button:hover {
   border-radius: 30px;
   background: -webkit-linear-gradient(bottom, #7579ff, #b224ef);
   border: 0px;
 }
 
-#signup-form submit {
+#signup-form submit, #login-button {
   transition: 2s background-color;
   border-radius: 30px;
   background: black;
   border: 0px;
+  font-size: 1.1rem;
+}
+
+#login-button {
+  color: white;
+}
+
+.bg-light {
+  border-bottom: solid;
+  border-bottom-width: thin;
+  color: #474849;
+}
+
+body {
+  background: url("./background.jpg");
+  background-position: center;
+  background-size: 100%;
 }
