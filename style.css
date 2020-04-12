@@ -1,17 +1,32 @@
 body {
-  background-color: grey;
-  font: serif;
+  background: url("background.jpg") no-repeat;
+  background-position: center;
+  background-size: 120%;
 }
-
-
-a {
+.nav-username {
+  text-align: right;
+}
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.left-sidebar {
+  width: 20%;
+  padding: 0.2%;
+  text-align: center;
   position: relative;
-  background-color: blue;
-  color: black;
-  border-style: groove;
-  padding-left: 95%;
-  padding-right: 25%;
-  padding-top: 40%;
-  padding-bottom: 3%;
-  text-decoration: underline;
+  background-color: transparent;
+  opacity: 0.8;
+}
+.buttons {
+  position: fixed;
+  top:10%;
+  left:30%;
+}
+.table {
+  position: fixed;
+  width: 20%;
+  left: 30%;
+  top: 20%;
 }
