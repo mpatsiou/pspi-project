@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css "href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./base.css" />
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <title>Freeeeeedom</title>
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
@@ -26,7 +27,7 @@
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
-            <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" id="login-button">Log in</a>
+            <a href="./login.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" id="login-button">Log in</a>
           </form>
         </div>
       </nav>
@@ -35,7 +36,9 @@
       <div class="mx-auto">
         <h1 class='text-center' id='welcome'><span>Welcome</span></h1>
         <p class='lead' id='introduction'>Welcome to the most reliable blog about freedom and justice in the UN</p>
-        <form id='signup-form'>
+        <h2 id="sign-up-label">Sign Up</h2>
+        <p class="phrase1">It's quick and easy<p>
+        <form class='signup-form form'>
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="signup-name">Name</label>
@@ -49,6 +52,10 @@
           <div class="form-group">
             <label for="signup-username">Username</label>
             <input type="text" class="form-control" id="signup-username" placeholder="Pick something unique">
+          </div>
+          <div class="form-group">
+            <label for="signup-username">Email</label>
+            <input type="text" class="form-control" id="signup-username" placeholder="Pick something personal">
           </div>
           <div class="form-row">
             <div class="form-group col-md-6">
