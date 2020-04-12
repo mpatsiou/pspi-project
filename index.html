@@ -2,13 +2,73 @@
 <html lang="eng">
 <head>
   <meta charset="en">
+  <link rel="stylesheet" type="text/css "href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <div class="header">
-    <nav>
-      <a href="Html">Username</a>
+  <div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <div class="collapse navbar-collapse" id="navbar-menu">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">Contact</a>
+            </li>
+          </ul>
+          <div class="nav-link">
+          <a class="nav-avatar" href="#">
+            <img src="user-icon.jpg" alt="Avatar" class="avatar">
+          </a>
+            <a class="nav-username" href="#"> Username </a>
+         </div>
+        </div>
     </nav>
   </div>
+
+  <div class="left-sidebar">
+    <div class="list-group list-group-flush">
+      <a href="#" class="list-group-item list-group-item-action bg-light"> Manage Posts </a>
+      <a href="#" class="list-group-item list-group-item-action bg-light"> Manage Users </a>
+      <a href="#"class="list-group-item list-group-item-action bg-light"> Manage Kati </a>
+    </div>
+ </div>
+
+ <div class="buttons">
+   <button type="button" class="btn btn-light">Add User</button>
+   <button type="button" class="btn btn-light">Management</button>
+ </div>
+
+ <table class="table">
+   <thead class="thead-dark">
+     <tr>
+       <th>N</th>
+       <th>Username</th>
+       <th>Password</th>
+       <th>Email</th>
+       <th>Role</th>
+     </tr>
+     <tr>
+       <th>1</th>
+       <th>VasilisPitsiavas</th>
+       <th> ********** </th>
+       <th>vpitsiavas83@gmail.com</th>
+       <th>Admin</th>
+     </tr>
+     <tr>
+       <th>2</th>
+       <th>Batsioulars</th>
+       <th>*********</th>
+       <th>mpatsioulars@gmail.com</th>
+       <th>Admin</th>
+     </tr>
+   </thead>
+ </table>
 </body>
 </html>
