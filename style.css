@@ -1,0 +1,17 @@
+body {
+  background-color: grey;
+  font: serif;
+}
+
+
+a {
+  position: relative;
+  background-color: blue;
+  color: black;
+  border-style: groove;
+  padding-left: 95%;
+  padding-right: 25%;
+  padding-top: 40%;
+  padding-bottom: 3%;
+  text-decoration: underline;
+}
