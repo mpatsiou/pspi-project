@@ -1,5 +1,5 @@
 #welcome {
-  padding-top: 15%;
+  padding-top: 10%;
   font-size: 50px;
   color: #333;
   font-family: 'Poppins-Bold';
@@ -26,16 +26,37 @@
 
 #login-button {
   color: white;
+  font-size: 18px;
+  margin-right: 30px;
+  width: 120px;
+  margin-bottom: 2px;
 }
 
 .bg-light {
   border-bottom: solid;
   border-bottom-width: thin;
-  color: #474849;
+  color: #6a86a2;
+  padding: 2px 4px 0px 4px;
+}
+
+#wrapper {
+  height: 100px;
 }
 
 body {
   background: url("./background.jpg");
   background-position: center;
   background-size: 100%;
+}
+
+.row {
+  margin: 0px 0px 0px 0px;
+}
+
+#peace-icon {
+  width: 30px;
+}
+
+#navbar-menu {
+  padding-left: 20px;
 }
