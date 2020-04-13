@@ -1,8 +1,4 @@
-body {
-  background: url("background.jpg") no-repeat;
-  background-position: center;
-  background-size: 120%;
-}
+
 .nav-username {
   text-align: right;
 }
@@ -12,21 +8,8 @@ body {
   border-radius: 50%;
 }
 .left-sidebar {
-  width: 20%;
-  padding: 0.2%;
+  width: 60%;
   text-align: center;
-  position: relative;
   background-color: transparent;
   opacity: 0.8;
-}
-.buttons {
-  position: fixed;
-  top:10%;
-  left:30%;
-}
-.table {
-  position: fixed;
-  width: 20%;
-  left: 30%;
-  top: 20%;
 }
