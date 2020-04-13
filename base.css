@@ -1,7 +1,7 @@
-
-#introduction {
-  font-size: 25px;
-  font-style: italic;
+body {
+  background: url("./background.jpg");
+  background-position: center;
+  background-size: 100%;
 }
 
 #welcome {
@@ -12,28 +12,29 @@
   font-weight: bold;
 }
 
-body {
-  background: url("./background.jpg");
-  background-position: center;
-  background-size: 100%;
+#introduction {
+  font-size: 25px;
+  font-style: italic;
+}
+
+.row {
+  margin: 0px 0px 0px 0px;
 }
 
 .form submit{
   margin-top: 5%;
 }
+
+/*Navbar*/
+#wrapper {
+  height: 100px;
+}
+
 .bg-light {
   border-bottom: solid;
   border-bottom-width: thin;
   color: #6a86a2;
   padding: 2px 4px 0px 4px;
-}
-
-#wrapper {
-  height: 100px;
-}
-
-.row {
-  margin: 0px 0px 0px 0px;
 }
 
 #peace-icon {
@@ -42,4 +43,38 @@ body {
 
 #navbar-menu {
   padding-left: 20px;
+}
+
+/*Footer*/
+#footer {
+  margin-top: 5%;
+  padding: 10px;
+  font-size: 12px;
+  background: #244759;
+  border-radius: 10px;
+  color: white;
+  opacity: 0.85;
+}
+
+#footer-body {
+  padding: 5px 0px 15px 15px;
+}
+
+#footer-icon {
+  width: 40px;
+}
+
+#contact {
+  font-size: 15px;
+  color: white;
+  text-decoration: underline;
+}
+
+.footer-media .fa{
+  font-size: 36px;
+  margin: .5rem .5rem 0rem .5rem;
+  width: 48px;
+  height: 48px;
+  background-color: none;
+  color: white;
 }
