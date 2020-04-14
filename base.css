@@ -1,5 +1,5 @@
 body {
-  background: url("./background.jpg") no-repeat;
+  background: url("./background.jpg");
   background-position: center;
   background-size: 100%;
 }
@@ -47,7 +47,7 @@ body {
 
 /*Footer*/
 #footer {
-  margin-top: 35%;
+  margin-top:35%;
   padding: 10px;
   font-size: 12px;
   background: #244759;
