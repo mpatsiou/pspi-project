@@ -1,7 +1,7 @@
-
-#introduction {
-  font-size: 25px;
-  font-style: italic;
+body {
+  background: url("./background.jpg");
+  background-position: center;
+  background-size: 100%;
 }
 
 #welcome {
@@ -12,10 +12,13 @@
   font-weight: bold;
 }
 
-body {
-  background: url("./background.jpg");
-  background-position: center;
-  background-size: 100%;
+#introduction {
+  font-size: 25px;
+  font-style: italic;
+}
+
+.row {
+  margin: 0px 0px 0px 0px;
 }
 
 .form submit{
@@ -33,10 +36,6 @@ body {
   height: 100px;
 }
 
-.row {
-  margin: 0px 0px 0px 0px;
-}
-
 #peace-icon {
   width: 30px;
 }
@@ -47,7 +46,7 @@ body {
 
 /*Footer*/
 #footer {
-  margin-top: 35%;
+  margin-top: 5%;
   padding: 10px;
   font-size: 12px;
   background: #244759;
