@@ -34,7 +34,7 @@
     <div class="conteiner">
       <div class="row justify-content-md-center">
         <div class="form-group col-md-6">
-        <form>
+        <form onsubmit = "return check();">
             <div class="form-group">
             <h3 class="text-center" id="welcome">Contact Form </h3>
               <label for="name">Name </label>
@@ -46,13 +46,21 @@
               </div>
               <div class="form-group">
                 <label for="comment">Comment </label>
-                <textarea type="text" class="form-control" id="inputPassword4" rows="10" placeholder="Your comment..."></textarea>
+                <textarea type="text" value="" class="form-control" id="inputPassword4" rows="10" placeholder="Your comment..."></textarea>
               </div>
             </div>
           </div>
           <div class="text-center form-group">
             <button class="btn btn-primary btn-lg active" aria-pressed="true" id="login-button">Send</button>
           </div>
+          <script type="text/javascript">
+            function check() {
+              var textarea = document.getElementById("inputPassword4");
+              if (textarea.value.length == 0) {
+                alert("You have to wright a comment");
+              }
+            }
+          </script>
         </form>
       </div>
     </div>
