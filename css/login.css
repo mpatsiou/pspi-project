@@ -22,6 +22,15 @@
   margin-bottom: 2px;
 }
 
+#check-row {
+  margin-top: 2%;
+  padding: 0px;
+}
+
+.col {
+  padding-right: 0px;
+}
+
 .media-buttons {
   width: 48px;
   height: 48px;
