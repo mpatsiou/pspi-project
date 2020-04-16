@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="./css/register.css" />
     <title>Freeeeeedom</title>
     <link rel="shortcut icon" type="image/x-icon" href="./photos/favicon.ico" />
+    <script src="./js/validForm.js"></script>
   </head>
   <body>
     <div id="wrapper">
@@ -40,32 +41,34 @@
             <h2 id="sign-up-label">Sign Up</h2>
             <p class="register-phrase">It's quick and easy<p>
             <form class="signup-form form">
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="signup-name">Name</label>
-                  <input type="text" class="form-control" id="signup-name" required>
+              <div class="form-inputs">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="signup-name">Name</label>
+                    <input name="name" type="text" class="form-control" id="signup-name" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="signup-surname">Surname</label>
+                    <input name="surname" type="text" class="form-control" id="signup-surname">
+                  </div>
                 </div>
-                <div class="form-group col-md-6">
-                  <label for="signup-surname">Surname</label>
-                  <input type="text" class="form-control" id="signup-surname">
+                <div class="form-group">
+                  <label for="signup-username">Username</label>
+                  <input name="username" type="text" class="form-control" id="signup-username" placeholder="Pick something unique">
                 </div>
-              </div>
-              <div class="form-group">
-                <label for="signup-username">Username</label>
-                <input type="text" class="form-control" id="signup-username" placeholder="Pick something unique">
-              </div>
-              <div class="form-group">
-                <label for="signup-username">Email</label>
-                <input type="text" class="form-control" id="signup-username" placeholder="Pick something personal">
-              </div>
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="signup-password">Password</label>
-                  <input type="password" class="form-control" id="signup-password">
+                <div class="form-group">
+                  <label for="signup-username">Email</label>
+                  <input name="email" type="text" class="form-control" id="signup-username" placeholder="Pick something personal">
                 </div>
-                <div class="form-group col-md-6">
-                  <label for="signup-password-confirm">Password (confirm)</label>
-                  <input type="password" class="form-control" id="signup-password-confirm">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="signup-password">Password</label>
+                    <input name="password" type="password" class="form-control" id="signup-password">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="signup-password-confirm">Password (confirm)</label>
+                    <input name="confirm_password" type="password" class="form-control" id="signup-password-confirm">
+                  </div>
                 </div>
               </div>
               <div class="form-group">
@@ -75,7 +78,7 @@
                 </div>
               </div>
               <div class="text-center form-group">
-                <submit type="submit" class="col-md-6 btn btn-primary" id="signup">Sign up</submit>
+                <submit type="submit" class="col-md-6 btn btn-primary sumbit" id="signup">Sign up</submit>
               </div>
             </form>
           </div>
@@ -84,12 +87,12 @@
       <div id="footer">
         <div class="card" id="footer-body">
           <div class="row">
-            <div class="col-sm footer-logo">
+            <div class="col-2 footer-logo">
               <a href="./index.html">
                 <img src="./photos/favicon.ico" alt="Peace Icon" id="footer-icon">
               </a>
             </div>
-            <div class="col-sm footer-about-us">
+            <div class="col-sm text-center" id="about-us">
               <h2 class="footer-about-us">About us</h2>
               <p class="footer-about-us">bla bla bla bla bla bla bla</p>
             </div>
