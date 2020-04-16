@@ -1,7 +1,12 @@
+html {
+  height: 100%;
+}
+
 body {
   background: url("../photos/background.jpg");
   background-position: center;
   background-size: 100%;
+  height: 100%;
 }
 
 #welcome {
