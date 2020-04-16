@@ -1,7 +1,12 @@
+html {
+  height: 100%;
+}
+
 body {
-  background: url("./background.jpg");
+  background: url("../photos/background.jpg");
   background-position: center;
   background-size: 100%;
+  height: 100%;
 }
 
 #welcome {
@@ -25,15 +30,16 @@ body {
   margin-top: 5%;
 }
 
+/*Navbar*/
+#wrapper {
+  height: 100px;
+}
+
 .bg-light {
   border-bottom: solid;
   border-bottom-width: thin;
   color: #6a86a2;
   padding: 2px 4px 0px 4px;
-}
-
-#wrapper {
-  height: 100px;
 }
 
 #peace-icon {
@@ -50,7 +56,6 @@ body {
   padding: 10px;
   font-size: 12px;
   background: #244759;
-  border-radius: 10px;
   color: white;
   opacity: 0.85;
 }
@@ -69,7 +74,7 @@ body {
   text-decoration: underline;
 }
 
-.footer-media .fa {
+.footer-media .fa{
   font-size: 36px;
   margin: .5rem .5rem 0rem .5rem;
   width: 48px;
