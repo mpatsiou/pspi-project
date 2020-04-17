@@ -2,12 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" type="text/css "href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="./css/base.css" />
     <link rel="stylesheet" type="text/css" href="./css/register.css" />
     <title>Freeeeeedom</title>
     <link rel="shortcut icon" type="image/x-icon" href="./photos/favicon.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./js/validForm.js"></script>
   </head>
   <body>
@@ -46,28 +48,34 @@
                   <div class="form-group col-md-6">
                     <label for="signup-name">Name</label>
                     <input name="name" type="text" class="form-control" id="signup-name" required>
+                    <span id='message1'></span>
                   </div>
                   <div class="form-group col-md-6">
                     <label for="signup-surname">Surname</label>
                     <input name="surname" type="text" class="form-control" id="signup-surname">
+                    <span id='message2'></span>
                   </div>
                 </div>
                 <div class="form-group">
                   <label for="signup-username">Username</label>
                   <input name="username" type="text" class="form-control" id="signup-username" placeholder="Pick something unique">
+                  <span id='message3'></span>
                 </div>
                 <div class="form-group">
                   <label for="signup-username">Email</label>
-                  <input name="email" type="text" class="form-control" id="signup-username" placeholder="Pick something personal">
+                  <input name="email" type="text" class="form-control" id="signup-email" placeholder="Pick something personal">
+                  <span id='message4'></span>
                 </div>
                 <div class="form-row">
                   <div class="form-group col-md-6">
                     <label for="signup-password">Password</label>
                     <input name="password" type="password" class="form-control" id="signup-password">
+                    <span id='message5'></span>
                   </div>
                   <div class="form-group col-md-6">
                     <label for="signup-password-confirm">Password (confirm)</label>
-                    <input name="confirm_password" type="password" class="form-control" id="signup-password-confirm">
+                    <input name="password-confirm" type="password" class="form-control" id="signup-password-confirm">
+                    <span id='message6'></span>
                   </div>
                 </div>
               </div>
@@ -78,14 +86,14 @@
                 </div>
               </div>
               <div class="text-center form-group">
-                <submit type="submit" class="col-md-6 btn btn-primary sumbit" id="signup">Sign up</submit>
+                <submit type="submit" class="col-md-6 btn btn-primary submit" id="signup">Sign up</submit>
               </div>
             </form>
           </div>
         </div>
       </div>
       <div id="footer">
-        <div class="card" id="footer-body">
+        <footer  id="footer-body">
           <div class="row">
             <div class="col-2 footer-logo">
               <a href="./index.html">
@@ -115,7 +123,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </footer>
     </div>
   </body>
 </html>
