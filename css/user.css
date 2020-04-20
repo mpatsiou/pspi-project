@@ -1,0 +1,80 @@
+
+
+.col-sm {
+  left:-10%;
+  text-align: center;
+}
+
+.fas  {
+  background-color: transparent;
+  border: transparent;
+}
+
+#content .card {
+  background-color:#D3D3D3;
+}
+
+.list-group-item {
+  background-color: #D3D3D3;
+
+}
+
+.card-text {
+  font-family: serif;
+}
+
+.card-header {
+  font-weight: bold;
+  font-family: serif;
+  text-align: center;
+}
+.card-sugestions {
+  text-align: center;
+}
+
+.user-data {
+  text-align: center;
+}
+
+.card-img-top {
+  width: 40%;
+  border-radius: 10rem;
+}
+
+.card-id {
+  align-items: center;
+  bottom: -2%;
+}
+
+.card-sugestions {
+  bottom: -3%;
+}
+/*News feed*/
+.own-post {
+  bottom: -2%;
+}
+
+.first-post {
+  bottom:-3%;
+}
+
+.second-post {
+  bottom:-4%;
+}
+/*navbar username and avatar*/
+.nav-username {
+  text-align: right;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.left-sidebar {
+  width: 60%;
+  text-align: center;
+  background-color: transparent;
+  opacity: 0.8;
+}
