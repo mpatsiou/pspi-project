@@ -16,7 +16,6 @@
 
 .list-group-item {
   opacity: 0.8;
-
 }
 
 .card-text {
@@ -28,7 +27,7 @@
   font-family: serif;
   text-align: center;
 }
-.card-sugestions {
+.card-suggestions {
   text-align: center;
 }
 
@@ -46,7 +45,7 @@
   bottom: -2%;
 }
 
-.card-sugestions {
+.card-suggestions {
   bottom: -3%;
 }
 /*News feed*/
