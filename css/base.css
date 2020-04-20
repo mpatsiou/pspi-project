@@ -107,3 +107,27 @@ bottom:0;
   color: white;
   text-decoration: underline;
 }
+
+/*Buttons */
+#content submit:hover, #header .btn:hover {
+  border-radius: 30px;
+  background: -webkit-linear-gradient(bottom, #7579ff, #b224ef);
+  border: 0px;
+}
+
+#content submit, #header .btn {
+  transition: 2s background-color;
+  border-radius: 30px;
+  background: black;
+  border: 0px;
+  font-size: 1.1rem;
+}
+
+ #header .btn {
+  color: white;
+  font-size: 18px;
+  margin-right: 30px;
+  width: 120px;
+  height: 40px;
+  margin-bottom: 2px;
+}
