@@ -11,11 +11,11 @@
 }
 
 #content .card {
-  background-color:#D3D3D3;
+  opacity: 0.9;
 }
 
 .list-group-item {
-  background-color: #D3D3D3;
+  opacity: 0.8;
 
 }
 
@@ -77,4 +77,8 @@
   text-align: center;
   background-color: transparent;
   opacity: 0.8;
+}
+
+.top-posts {
+  text-align: left;
 }
