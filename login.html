@@ -2,108 +2,133 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" type="text/css "href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="./css/base.css" />
     <link rel="stylesheet" type="text/css" href="./css/login.css" />
     <link rel="shortcut icon" type="image/x-icon" href="./photos/favicon.ico" />
     <title>Sign in</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/validForm.js"></script>
   </head>
   <body>
     <div id="wrapper">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <img src="./photos/favicon.ico" alt="Peace Icon" id="peace-icon">
-        <div class="collapse navbar-collapse" id="navbar-menu">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#">Contact</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <a href="./index.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" id="register-button">Register</a>
-          </form>
+      <div id="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <img src="./photos/favicon.ico" alt="Peace Icon" id="peace-icon">
+          <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">Contact</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <a href="./index.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" id="register-button">Register</a>
+            </form>
+          </div>
+        </nav>
+      </div>
+      <div id="content">
+        <div class="row">
+          <div class="mx-auto">
+            <h1 class='text-center' id='welcome'><span>Welcome</span></h1>
+            <p class='lead' id='introduction'>Welcome to the most reliable blog about freedom and justice in the UN</p>
+            <form class='signin-form form'>
+              <div class="form-row">
+                <div class="form-group col-md-9">
+                  <div class="container row">
+                    <div class="col-4">
+                      <span id='message1'></span>
+                    </div>
+                    <div class="col-sm">
+                      <input name="username" type="text" class="form-control" id="signin-name" required placeholder="username">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-9">
+                  <div class="container row">
+                    <div class="col-4">
+                      <span id='message2'></span>
+                    </div>
+                    <div class="col-sm">
+                      <input name="user-password" type="password" class="form-control" id="signin-password" required placeholder="password">
+                      <div class="container row" id="check-row">
+                        <div class="form-check col text-left">
+                          <input class="form-check-input" type="checkbox" id="gridCheck">
+                          <label class="form-check-label" for="gridCheck" >Remember me</label>
+                        </div>
+                        <div class="col text-right" id="forgot-password ">
+                          <a href="#" id="txt1">Forgot Password?</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="text-center form-group">
+                <submit type="submit" class="col-md-6 btn btn-primary submit" id="loggin">Log in</submit>
+              </div>
+              <div class="text-center p-t-46 p-b-20" id="or">
+                <span class="txt2">or sign in using</span>
+              </div>
+              <div class="text-center signin-form">
+                <button type="button" class="btn btn-primary media-buttons" id="fb-button">
+                  <a href="#" id="facebook">
+                    <i class="fa fa-facebook-f"></i>
+                  </a>
+                </button>
+                <button type="button" class="btn btn-primary media-buttons" id="google-button">
+                  <a href="#" id="google">
+                    <i class="fa fa-google-plus"></i>
+                  </a>
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
-      </nav>
-    </div>
-    <div class="row">
-      <div class="mx-auto">
-        <h1 class='text-center' id='welcome'><span>Welcome</span></h1>
-        <p class='lead' id='introduction'>Welcome to the most reliable blog about freedom and justice in the UN</p>
-        <form class='signin-form form'>
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <input type="text" class="form-control" id="signin-name" required placeholder="username">
+      </div>
+      <div id="footer">
+        <footer  id="footer-body">
+          <div class="row">
+            <div class="col-2 footer-logo">
+              <a href="./index.html">
+                <img src="./photos/favicon.ico" alt="Peace Icon" id="footer-icon">
+              </a>
             </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <input type="password" class="form-control" id="signin-password" required placeholder="password">
+            <div class="col-7 text-center" id="about-us">
+              <h2 class="footer-about-us">About us</h2>
+              <p class="footer-about-us">bla bla bla bla bla bla bla</p>
             </div>
-          </div>
-          <div class="container row">
-            <div class="form-check col">
-              <input class="form-check-input" type="checkbox" id="gridCheck">
-              <label class="form-check-label" for="gridCheck" >Remember me</label>
-            </div>
-            <div class="forgot-password col-8">
-              <a href="#" id="txt1">Forgot Password?</a>
-            </div>
-          </div>
-          <div class="text-center form-group">
-            <submit type="submit" class="col-md-6 btn btn-primary" id="loggin">Log in</submit>
-          </div>
-          <div class="text-center p-t-46 p-b-20" id="or">
-            <span class="txt2">or sign in using</span>
-          </div>
-          <div class="text-center signin-form">
-            <button type="button" class="btn btn-primary media-buttons" id="fb-button">
-              <a href="#" id="facebook">
+            <div class="col-sm text-center footer-media">
+              <a href="https://www.facebook.com/unitednations" target="_blank" id="facebook">
                 <i class="fa fa-facebook-f"></i>
               </a>
-            </button>
-            <button type="button" class="btn btn-primary media-buttons" id="google-button">
-              <a href="#" id="google">
-                <i class="fa fa-google-plus"></i>
+              <a href="https://twitter.com/UN" target="_blank" id="google">
+                <i class="fa fa-twitter"></i>
               </a>
-            </button>
+              <a href="https://www.instagram.com/unitednations/" target="_blank" id="google">
+                <i class="fa fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/united-nations" target="_blank" id="linkedin">
+                <i class="fa fa-linkedin"></i>
+              </a>
+              <div class="contact-us">
+                <a href="#" id="contact">Contact</a>
+              </div>
+            </div>
           </div>
-        </form>
+        </footer>
       </div>
     </div>
-    <footer class="fixed-bottom" id="footer">
-      <div class="row">
-        <div class="col-sm" id="footer-icon">
-          <img src="./photos/favicon.ico" alt="Peace Icon" id="footer-icon">
-        </div>
-        <div class="col-sm footer-about-us">
-          <h2 class="footer-about-us">About us</h2>
-          <p class="footer-about-us">bla bla bla bla bla bla bla</p>
-
-        </div>
-        <div class="col-sm text-center footer-media">
-          <a href="https://www.facebook.com/unitednations" target="_blank" id="facebook">
-            <i class="fa fa-facebook-f"></i>
-          </a>
-          <a href="https://twitter.com/UN" target="_blank" id="google">
-            <i class="fa fa-twitter"></i>
-          </a>
-          <a href="https://www.instagram.com/unitednations/" target="_blank" id="google">
-            <i class="fa fa-instagram"></i>
-          </a>
-          <a href="https://www.linkedin.com/company/united-nations" target="_blank" id="linkedin">
-            <i class="fa fa-linkedin"></i>
-          </a>
-          <div class="contact-us">
-            <a href="#" id="contact">Contact</a>
-          </div>
-        </div>
-      </div>
-    </footer>
   </body>
 </html>
