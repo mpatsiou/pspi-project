@@ -28,7 +28,7 @@ min-height: 90%;
 }
 
 #welcome {
-  padding-top: 1%;
+  padding-top: 2%;
   font-size: 50px;
   color: #333;
   font-family: 'Poppins-Bold';
@@ -97,15 +97,14 @@ min-height: 90%;
 #footer .col-9 {
   padding: 0px;
   right: 20px;
+  margin: 4px 0px 4px 0px;
 }
 .footer-media .fa {
-  margin: 6px 0% 3px 0%;
+  margin: 4px 0px 4px 0px;
   font-size: 25px;
-  padding-left: 2%;
-  background-color: none;
+  padding: 0% 1% 0% 1%;
   color: white;
 }
-
 
 /*Buttons */
 #content submit:hover, #header .btn:hover {
