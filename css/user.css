@@ -1,10 +1,13 @@
-.fas  {
-  background-color: transparent;
+.fas {
   border: transparent;
+  background-color: white;
+  color: blue;
+
+
 }
 
 #content .card {
-  opacity: 0.9;
+  background-color: white;
 }
 
 .list-group-item {
@@ -30,8 +33,14 @@
 }
 
 .card-img-top {
-  width: 40%;
-  border-radius: 10rem;
+  width: 50%;
+  border-radius: 50%;
+}
+.img-feed {
+  width: 30px;
+  border-radius: 50%;
+
+
 }
 
 .card-id {
@@ -46,11 +55,12 @@
 }
 /*News feed*/
 .own-post {
-  bottom: -2%;
+  bottom: -2%
 }
 
 .first-post {
   bottom:-3%;
+
 }
 
 .second-post {
@@ -74,19 +84,39 @@
 }
 .left-sidebar {
   width: 60%;
-  text-align: center;
-  background-color: transparent;
-  opacity: 0.8;
+
 }
 
 .view-profile {
   font-size: 85%;
   color: #1E90FF;
 }
+
 .gradient {
   background: linear-gradient(blue 40%, white 0%);
 }
+
 .description {
   font-size: 80%;
   color: #808080;
+}
+
+.btn-group {
+  background-color: white;
+  width: 25%;
+  left: 3%;
+}
+
+.form-control {
+  margin-top: 3%;
+  margin-bottom: 2%;
+  border: 1px;
+}
+
+.image {
+  margin-top: 2%;
+}
+
+.style-text {
+  margin-top:2%;
 }
