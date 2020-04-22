@@ -15,23 +15,28 @@
   <body>
     <div id="wrapper">
       <div id="header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-md mb-4 bg-light">
           <img src="./photos/favicon.ico" alt="Peace Icon" id="peace-icon">
-          <div class="collapse navbar-collapse" id="navbar-menu">
+          <div class="toogle-button">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <i class="fa fa-bars"></i>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
                 <a class="nav-link" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#footer">About</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link " href="./contact.html">Contact</a>
               </li>
+              <!--<li class="nav-item">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+              </li> -->
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <a href="./login.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" id="login-button">Log in</a>
-            </form>
+            <div class="form-inline mt-2 mt-md-0">
+              <a href="./index.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" id="signup-button">Register</a>
+            </div>
           </div>
         </nav>
       </div>
@@ -67,31 +72,24 @@
       <div id="footer">
         <footer  id="footer-body">
           <div class="row">
-            <div class="col-2 footer-logo">
+            <div class="col-3 tex-left footer-logo">
               <a href="./index.html">
                 <img src="./photos/favicon.ico" alt="Peace Icon" id="footer-icon">
               </a>
             </div>
-            <div class="col-7 text-center" id="about-us">
-              <h2 class="footer-about-us">About us</h2>
-              <p class="footer-about-us">bla bla bla bla bla bla bla</p>
-            </div>
-            <div class="col-sm text-center footer-media">
-              <a href="https://www.facebook.com/unitednations" target="_blank" id="facebook">
+            <div class="col-9 text-right footer-media">
+              <a href="https://www.facebook.com/unitednations" target="_blank" id="footer-facebook">
                 <i class="fa fa-facebook-f"></i>
               </a>
-              <a href="https://twitter.com/UN" target="_blank" id="google">
+              <a href="https://twitter.com/UN" target="_blank" id="footer-twitter">
                 <i class="fa fa-twitter"></i>
               </a>
-              <a href="https://www.instagram.com/unitednations/" target="_blank" id="google">
+              <a href="https://www.instagram.com/unitednations/" target="_blank" id="footer-instagram">
                 <i class="fa fa-instagram"></i>
               </a>
               <a href="https://www.linkedin.com/company/united-nations" target="_blank" id="linkedin">
                 <i class="fa fa-linkedin"></i>
               </a>
-              <div class="contact-us">
-                <a href="./contact.html" id="contact">Contact</a>
-              </div>
             </div>
           </div>
         </footer>
