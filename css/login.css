@@ -12,7 +12,7 @@
   height: 48px;
   border-radius: 50%;
   border-style: none;
-  margin-right: 13px;
+  margin: 0px 5px 0px 5px;
 }
 
 #fb-button:hover, #google-button:hover  {

@@ -60,12 +60,22 @@ min-height: 90%;
   width: 30px;
 }
 
+.nav-link {
+  color: #0a0a0a;
+}
+.nav-item {
+  margin: 0px 5px 0px 5px;
+}
+#header .form-control {
+  border-radius: 20px;
+}
 #navbar-menu {
   padding-left: 20px;
 }
 
 /*Footer*/
 #footer {
+  margin-top: 6%;
   width: 100%;
 }
 
@@ -80,14 +90,18 @@ min-height: 90%;
   width: 40px;
 }
 
-#footer-body .col-3, #footer .col-9{
+#footer-body .col-3 {
   padding: 0px;
 }
 
+#footer .col-9 {
+  padding: 0px;
+  right: 20px;
+}
 .footer-media .fa {
-  margin-top: 1%;
+  margin: 6px 0% 3px 0%;
   font-size: 25px;
-  padding-left: 3%;
+  padding-left: 2%;
   background-color: none;
   color: white;
 }
