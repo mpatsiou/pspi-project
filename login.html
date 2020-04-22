@@ -1,37 +1,45 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
+    <title>Sign in</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" type="text/css "href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="./css/base.css" />
     <link rel="stylesheet" type="text/css" href="./css/login.css" />
     <link rel="shortcut icon" type="image/x-icon" href="./photos/favicon.ico" />
-    <title>Sign in</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="./js/validForm.js"></script>
   </head>
   <body>
     <div id="wrapper">
       <div id="header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-md mb-4 bg-light">
           <img src="./photos/favicon.ico" alt="Peace Icon" id="peace-icon">
-          <div class="collapse navbar-collapse" id="navbar-menu">
+          <div class="toogle-button">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <i class="fa fa-bars"></i>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
                 <a class="nav-link" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link " href="./contact.html">Contact</a>
               </li>
+              <!--<li class="nav-item">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+              </li> -->
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <a href="./index.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" id="register-button">Register</a>
-            </form>
+            <div class="form-inline mt-2 mt-md-0">
+              <a href="./index.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" id="signup-button">Register</a>
+            </div>
           </div>
         </nav>
       </div>
@@ -66,7 +74,7 @@
                           <input class="form-check-input" type="checkbox" id="gridCheck">
                           <label class="form-check-label" for="gridCheck" >Remember me</label>
                         </div>
-                        <div class="col text-right" id="forgot-password ">
+                        <div class="col text-right" id="forgot-password">
                           <a href="#" id="txt1">Forgot Password?</a>
                         </div>
                       </div>
@@ -82,16 +90,16 @@
                 <span class="txt2">or sign in using</span>
               </div>
               <div class="text-center signin-form">
-                <button type="button" class="btn btn-primary media-buttons" id="fb-button">
+                <div class="btn btn-primary media-buttons" id="fb-button">
                   <a href="#" id="facebook">
                     <i class="fa fa-facebook-f"></i>
                   </a>
-                </button>
-                <button type="button" class="btn btn-primary media-buttons" id="google-button">
+                </div>
+                <div class="btn btn-primary media-buttons" id="google-button">
                   <a href="#" id="google">
                     <i class="fa fa-google-plus"></i>
                   </a>
-                </button>
+                </div>
               </div>
             </form>
           </div>
@@ -100,31 +108,30 @@
       <div id="footer">
         <footer  id="footer-body">
           <div class="row">
-            <div class="col-2 footer-logo">
+            <div class="col-3 tex-left footer-logo">
               <a href="./index.html">
                 <img src="./photos/favicon.ico" alt="Peace Icon" id="footer-icon">
               </a>
             </div>
-            <div class="col-7 text-center" id="about-us">
-              <h2 class="footer-about-us">About us</h2>
-              <p class="footer-about-us">bla bla bla bla bla bla bla</p>
-            </div>
-            <div class="col-sm text-center footer-media">
-              <a href="https://www.facebook.com/unitednations" target="_blank" id="facebook">
+            <div class="col-9 text-right footer-media">
+              <a href="https://www.facebook.com/unitednations" target="_blank" id="footer-facebook">
                 <i class="fa fa-facebook-f"></i>
               </a>
-              <a href="https://twitter.com/UN" target="_blank" id="google">
+              <a href="https://twitter.com/UN" target="_blank" id="footer-twitter">
                 <i class="fa fa-twitter"></i>
               </a>
-              <a href="https://www.instagram.com/unitednations/" target="_blank" id="google">
+              <a href="https://www.instagram.com/unitednations/" target="_blank" id="footer-instagram">
                 <i class="fa fa-instagram"></i>
               </a>
               <a href="https://www.linkedin.com/company/united-nations" target="_blank" id="linkedin">
                 <i class="fa fa-linkedin"></i>
               </a>
+<<<<<<< HEAD
               <div class="contact-us">
                 <a href="./contact.html" id="contact">Contact</a>
               </div>
+=======
+>>>>>>> ea01eec672aef869e1a989411b295f7c506cef4d
             </div>
           </div>
         </footer>

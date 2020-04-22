@@ -3,16 +3,13 @@
   padding: 0px;
 }
 
-.col {
-  padding-right: 0px;
-}
-
 .media-buttons {
   width: 48px;
   height: 48px;
   border-radius: 50%;
   border-style: none;
-  margin-right: 13px;
+  margin: 0px 5px 0px 5px;
+  padding: 13px 0px 13px 0px;
 }
 
 #fb-button:hover, #google-button:hover  {
@@ -29,13 +26,13 @@
 
 .fa {
   color: white;
-  font-size: 18px;
+  font-size: 20px;
 }
 
-#or{
+#or {
   margin: 40px 0px 20px 0px;
 }
 
 #txt1 {
-  color: #blue;
+  color: blue;
 }
