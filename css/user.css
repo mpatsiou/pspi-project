@@ -44,8 +44,13 @@
 .card-suggestions {
   top: 3%;
   text-align: center;
-  top: 2%;
 }
+
+.card-top-posts {
+  top:2%;
+  text-align: center;
+}
+
 /*News feed*/
 .own-post {
   top: 2%;
