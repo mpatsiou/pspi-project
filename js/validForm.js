@@ -8,6 +8,11 @@ $(() => {
   if (register) {
     $(register).click(validateRegisterForm)
   }
+
+  const contact_form = $("form submit")[0]
+  if (contact_form) {
+    $(contact_form).click(validateContactForm)
+  }
 })
 
 // Register form validation
@@ -30,7 +35,15 @@ const validateLoginForm = () => {
   validateEmail()
 }
 
-/** 
+// Contact form validation
+const validateContactForm = () => {
+  flushErrors()
+  validateEmptyInputs()
+  validateEmail()
+  validateTextarea()
+}
+
+/**
  * Helper functions
  */
 
@@ -71,4 +84,14 @@ const flushErrors = () => {
     $(input).removeClass('is-invalid')
     $('.invalid-feedback').remove()
   }
+}
+
+const validateTextarea = () => {
+  let text = $('textarea')[0]
+  const isEmpty = text => text.value.length == 0
+  if (isEmpty(text)) {
+    genError(text, "Fill the above")
+  }
+
+
 }

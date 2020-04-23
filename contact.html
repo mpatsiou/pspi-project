@@ -12,6 +12,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="./js/validForm.js"></script>
   </head>
   <body>
     <div id="wrapper">
@@ -45,26 +46,26 @@
         <div class="conteiner">
           <div class="row justify-content-md-center">
             <div class="form-group col-md-6">
-            <form onsubmit = "return check();">
+              <form onsubmit = "return check(); contact-form">
                 <div class="form-group">
-                <h3 class="text-center" id="welcome">Contact Form </h3>
-                  <label for="name">Name </label>
+                  <h3 class="text-center" id="welcome">Contact Form </h3>
+                  <label for="name">Name</label>
                   <input name="name" type="text" class="form-control" id="contact-name" placeholder="Your name...">
-                  </div>
-                  <div class="form-group">
-                    <label for="email">Email </label>
-                    <input name="email" type="text" class="form-control" id="contact-email" placeholder="Your email...">
-                  </div>
-                  <div class="form-group">
-                    <label for="comment">Comment </label>
-                    <textarea name="comment "type="text" value="" class="form-control" id="comment" rows="10" placeholder="Your comment..."></textarea>
-                  </div>
                 </div>
-              </div>
-              <div class="text-center form-group">
-                <submit class="btn btn-primary btn-lg active submit" aria-pressed="true">Send</submit>
-              </div>
-           </form>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input name="email" type="text" class="form-control" id="contact-email" placeholder="Your email...">
+                </div>
+                <div class="form-group">
+                  <label for="comment">Comment</label>
+                  <textarea name="comment" type="text" value="" class="form-control" id="comment" rows="10" placeholder="Your comment..."></textarea>
+                </div>
+                <div class="text-center form-group">
+                  <submit type="submit" class="col-md-6 btn btn-primary submit" id="signup">Send</submit>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
       <div id="footer">
