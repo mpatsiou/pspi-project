@@ -107,8 +107,9 @@
 .form-control {
   margin-top: 2%;
   margin-bottom: 3%;
-  border: 1px solid grey;
+  border: 0px;
   border-radius: 18rem;
+  background-color: #C0C0C0;
 }
 
 .feed-avatar {
@@ -119,6 +120,7 @@
   margin-top: 2%;
   margin-left: 2%;
   margin-right: 3%;
+  
 }
 
 .top-posts {
