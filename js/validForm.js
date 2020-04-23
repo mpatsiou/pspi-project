@@ -1,63 +1,74 @@
-function valid_form() {
-  let inputs = (document.getElementsByTagName("input"))
-  for (i = 0; i < inputs.length; ++i) {
-    if (inputs[i].value == "") {
-      border_alert(inputs[i].id)
-      message_alert(inputs[i].name, i + 1)
-    }
-    else if (inputs[i].value != ""){
-      if (inputs[i].name == "password-confirm" ||  inputs[i].name == "password" ) {
-        if (!check_password()) {
-          border_alert(inputs[i].id)
-          var id = '#message'+ (i + 1)
-          $(id).html('Passwords not matched').css('color', 'red');
-        }
-        else {
-          delete_message(inputs[i].name, i + 1)
-          green_border(inputs[i].id)
-        }
-      }
-      else {
-        delete_message(inputs[i].name, i + 1)
-        green_border(inputs[i].id)
-      }
-    }
+$(() => {
+  const login = $(".signin-form submit")[0]
+  if (login) {
+    $(login).click(validateLoginForm)
+  }
+
+  const register = $(".signup-form submit")[0]
+  if (register) {
+    $(register).click(validateRegisterForm)
+  }
+})
+
+// Register form validation
+const validateRegisterForm = () => {
+  flushErrors()
+  validateEmptyInputs()
+  validateEmail()
+
+  // Validate password
+  input = $('input[type="password"]')
+  if (input[0].value != input[1].value) {
+    genError(input[1], 'Passwords do not match')
   }
 }
 
-function border_alert(input_id) {
-  var id = "#" + input_id
-  $(id).css("border-color", "red")
+// Login form validation
+const validateLoginForm = () => {
+  flushErrors()
+  validateEmptyInputs()
+  validateEmail()
 }
 
-function message_alert(input_name, i) {
-  var id = "#message" + i
-  $(id).html("Please enter your " + input_name).css('color', 'red')
-}
+/** 
+ * Helper functions
+ */
 
-function green_border(input_id) {
-  id = "#" + input_id
-  $(id).css("border-color", "green")
-}
+// Error on empty inputs
+const validateEmptyInputs = () => {
+  const isEmpty = input => input.value.length == 0
 
-function delete_message(input_name, i) {
-  var id = "#message" + i
-  $(id).empty()
-}
-
-
-function check_password() {
-  var password1 = document.getElementById("signup-password")
-  var password2 = document.getElementById("signup-password-confirm")
-  if (password1.value != password2.value) {
-    return false
+  for (const input of $('input')) {
+      if (isEmpty(input)) {
+        genError(input, 'Fill the above')
+      }
   }
-  return true
 }
 
-function init() {
-  document.getElementsByClassName("submit")[0].onclick = (valid_form)
+// Validate email
+const validateEmail = () => {
+  let input = $('input[name="email"]')
+  let regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/
 
+  if (!regex.test(input.val())) {
+    genError(input, 'Email is invalid')
+  }
 }
 
-window.onload = init
+// Generate error by adding is-invalid class and generating adding error div
+const genError = (input, error) => {
+  //Return if error already exists
+  if ($(input).next().hasClass('invalid-feedback'))
+    return
+
+  $(input).addClass('is-invalid')
+  $(input).after(`<div class="invalid-feedback">${error}</div>`)
+}
+
+// Remove errors
+const flushErrors = () => {
+  for (const input of $('input')) {
+    $(input).removeClass('is-invalid')
+    $('.invalid-feedback').remove()
+  }
+}
