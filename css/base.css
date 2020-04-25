@@ -134,9 +134,12 @@ min-height: 90%;
   border: 0px;
 }
 
-.contact-us {
-  margin-top: 3%;
-  text-align: center;
+#content submit, #header .btn {
+  transition: 2s background-color;
+  border-radius: 30px;
+  background: black;
+  border: 0px;
+  font-size: 1.1rem;
 }
 
 #header .btn {
