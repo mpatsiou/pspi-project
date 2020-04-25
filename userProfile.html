@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="eng">
   <head>
-    <title>Admin</title>
+    <title>Username</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -57,70 +57,28 @@
                   <h5 class="card-title text-center">Username</h5>
                   <div class="user-data text-center">
                     <ul class="list-group list-group-flush">
-                      <li class="list-group-item">Total Users
+                      <li class="list-group-item">Followers
                         <p>10</p>
                       </li>
-                      <li class="list-group-item">Total Posts
+                      <li class="list-group-item">Following
                         <p>30</p>
                       </li>
+                       <li class="list-group-item">
+                         <a href="./userPage.html">Home</a>
+                       </li>
                     </ul>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-sm-9" id="manage">
-              <div class="card" id="total-users">
-                <h4 class="card-title">Total Users</h4>
-                <button class="btn btn-primary add-element" type="submit"><i class="fas fa-plus"></i>Add user</button>
-                <div class="table-responsive">
-                  <table class="table table-striped" id="users-table">
-                    <thead>
-                      <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Username</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Surname</th>
-                        <th scope="col">Email</th>
-                        <th scope="col">Action</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>markousss</td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>example1@gmail.com</td>
-                        <td>
-                          <button class="delete-button" type="button"><i class="fas fa-trash-alt"></i>Delete</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>mr_Jacob</td>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>example2@gmail.com</td>
-                        <td>
-                          <button class="delete-button" type="button"><i class="fas fa-trash-alt"></i>Delete</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td>The Birdman</td>
-                        <td>Larry</td>
-                        <td>Bird</td>
-                        <td>example3@gmail.com</td>
-                        <td>
-                          <button class="delete-button" type="button"><i class="fas fa-trash-alt"></i>Delete</button>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+              <div class="card" id="about-user">
+                <h4 class="card-title">About</h4>
               </div>
+
               <div class="card" id="total-posts">
-                <h4 class="card-title">Total Posts</h4>
+                <h4 class="card-title">My Posts</h4>
+                <a href="./userPage.html" class="btn btn-primary add-element"><i class="fas fa-plus"></i>New post</a>
                 <div class="table-responsive">
                   <table class="table table-striped" id="posts-table">
                     <thead>

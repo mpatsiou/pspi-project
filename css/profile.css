@@ -1,11 +1,17 @@
-#username {
+a {
   margin-right: 20px;
   color: black;
   text-decoration: none;
+  margin-right: 0px;
 }
 
-#username:hover {
+a:hover {
   color: #7579ff;
+  text-decoration: none
+}
+
+#username {
+  margin-right: 20px;
 }
 
 #user-icon {
@@ -68,11 +74,14 @@ Profile Card*/
   width: 80px;
   font-size: 70%;
   margin-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .delete-button {
-  width: 60px;
-  font-size: 50%;
+  width: 80px;
+  height: 25px;
+  font-size: 80%;
   margin-left: 0px;
   margin-right: 0px
 }
