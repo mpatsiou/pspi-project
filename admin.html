@@ -48,7 +48,7 @@
     <div id="content">
       <div class="container mx-auto" id="content-body">
         <div class="row">
-          <div class="col-3">
+          <div class="col-sm-3">
             <div class="card" id="personal-card">
               <div class="gradient">
               <img src="./photos/avatar.ico" id="personal-photo">
@@ -71,13 +71,65 @@
               </div>
             </div>
           </div>
-          <div class="col-8">
+          <div class="col-sm-9" id="manage">
+            <div class="card" id="total-users">
+              <h5 class="card-title">Total Users
+                <span class="card-subtitle mb-2">All users in the database</span>
+              </h5>
+              <button class="btn btn-primary add-element" type="submit"><i class="fas fa-plus"></i>Add user</button>
+              <div class="table-responsive">
+                <table class="table table-striped" id="users-table">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Username</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Surname</th>
+                      <th scope="col">Email</th>
+                      <th scope="col">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>markousss</td>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>example1@gmail.com</td>
+                      <td>
+                        <button class="delete-button" type="button"><i class="fas fa-trash-alt"></i>Delete</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>mr_Jacob</td>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>example2@gmail.com</td>
+                      <td>
+                        <button class="delete-button" type="button"><i class="fas fa-trash-alt"></i>Delete</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>The Birdman</td>
+                      <td>Larry</td>
+                      <td>Bird</td>
+                      <td>example3@gmail.com</td>
+                      <td>
+                        <button class="delete-button" type="button"><i class="fas fa-trash-alt"></i>Delete</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <div id="footer">
-      <footer  id="footer-body">
+      <footer id="footer-body">
         <div class="row">
           <div class="col-3 footer-logo">
             <a href="./index.html">

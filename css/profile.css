@@ -13,13 +13,14 @@
   width: 25px;
 }
 
-/*Content*/
-#personal-card, .gradient {
+/*Content
+Profile Card*/
+#content .card, .gradient {
   border: none;
   border-radius: 3px;
 }
 
-#content .col-3, .col-8 {
+#content .col-sm-3, .col-sm-9 {
   margin-top: 10%;
 }
 
@@ -45,4 +46,32 @@
 .user-data .list-group {
   border-top: 1px solid rgba(0,0,0,.125);
   color: #0000009e;
+}
+
+#personal-card .card-title {
+  margin-bottom: 15%;
+}
+
+/* Manage card */
+.col-sm-9 .card {
+  padding: 10px;
+}
+
+#manage .card-subtitle {
+  margin: 4px;
+  font-size: 80%;
+  color: #6c757db0!important;
+}
+
+.add-element {
+  width: 80px;
+  font-size: 70%;
+  margin-bottom: 10px;
+}
+
+.delete-button {
+  width: 60px;
+  font-size: 50%;
+  margin-left: 0px;
+  margin-right: 0px
 }
