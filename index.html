@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Freedom</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="./css/base.css" />
     <link rel="stylesheet" type="text/css" href="./css/register.css" />
-    <title>Freeeeeedom</title>
     <link rel="shortcut icon" type="image/x-icon" href="./photos/favicon.ico" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="./js/validForm.js"></script>
   </head>
   <body>
@@ -17,7 +20,12 @@
       <div id="header">
         <nav class="navbar navbar-expand-md mb-4 bg-light">
           <img src="./photos/favicon.ico" alt="Peace Icon" id="peace-icon">
-          <div class="collapse navbar-collapse" id="navbar-menu">
+          <div class="toogle-button">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <i class="fa fa-bars"></i>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
                 <a class="nav-link" href="#">Home</a>
@@ -29,9 +37,9 @@
                 <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
               </li> -->
             </ul>
-            <form class="form-inline mt-2 mt-md-0">
+            <div class="form-inline mt-2 mt-md-0">
               <a href="./login.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" id="signin-button">Sign in</a>
-            </form>
+            </div>
           </div>
         </nav>
       </div>
