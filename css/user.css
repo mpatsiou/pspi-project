@@ -115,7 +115,7 @@
 }
 
 .feed-avatar {
-  margin-top: 2%;
+  margin-top: 1%;
 }
 
 .post-paragraphs {
@@ -153,6 +153,7 @@
 }
 
 .tittle {
+  margin-top: 2%;
   border: 1px;
   border-style: none solid none none;
 }
@@ -160,16 +161,19 @@
 .tittle-description {
   font-size: 20px;
   font-weight: bold;
-  color: #262626
+  color: #262626;
 }
 
-.form-group {
-  text-align: center;
-  width: 210%;
-}
-
-.post {
+#post-compose {
   border-radius: 1rem;
-  width: 100%;
   resize: none;
+}
+
+#form-align {
+  text-align: center;
+}
+
+.post-aligment {
+  position: relative;
+  left: 5%;
 }
