@@ -1,0 +1,15 @@
+
+.nav-username {
+  text-align: right;
+}
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.left-sidebar {
+  width: 60%;
+  text-align: center;
+  background-color: transparent;
+  opacity: 0.8;
+}

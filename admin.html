@@ -1,205 +1,205 @@
 <!DOCTYPE html>
 <html lang="eng">
-<head>
-  <title>Admin</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="./css/base.css" />
-  <link rel="stylesheet" type="text/css" href="./css/profile.css" />
-  <link rel="shortcut icon" type="image/x-icon" href="./photos/favicon.ico" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <script src="https://kit.fontawesome.com/8e2d46eee2.js" crossorigin="anonymous"></script>
-  <script src="./js/validForm.js"></script>
-</head>
-<body>
-  <div id="wrapper">
-    <div id="header">
-      <nav class="navbar navbar-expand-md mb-4 bg-light">
-        <img src="./photos/favicon.ico" alt="Peace Icon" id="peace-icon">
-        <div class="toogle-button">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <i class="fa fa-bars"></i>
-          </button>
-        </div>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Contact</a>
-            </li>
-            <!--<li class="nav-item">
-              <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            </li> -->
-          </ul>
-          <div class="form-inline mt-2 mt-md-0">
-            <a href="./admin.html" class="" aria-pressed="true"  id="username">
-              <img src="./photos/avatar.ico" id="user-icon">Username
-            </a>
+  <head>
+    <title>Admin</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/base.css" />
+    <link rel="stylesheet" type="text/css" href="./css/profile.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="./photos/favicon.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/8e2d46eee2.js" crossorigin="anonymous"></script>
+    <script src="./js/validForm.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="header">
+        <nav class="navbar navbar-expand-md mb-4 bg-light">
+          <img src="./photos/favicon.ico" alt="Peace Icon" id="peace-icon">
+          <div class="toogle-button">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <i class="fa fa-bars"></i>
+            </button>
           </div>
-        </div>
-      </nav>
-    </div>
-    <div id="content">
-      <div class="container mx-auto" id="content-body">
-        <div class="row">
-          <div class="col-sm-3">
-            <div class="card" id="personal-card">
-              <div class="gradient">
-              <img src="./photos/avatar.ico" id="personal-photo">
-              </div>
-              <div class="card-body">
-                <h5 class="card-title text-center">Username</h5>
-                <div class="user-data text-center">
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Total Users
-                      <p>10</p>
-                    </li>
-                    <li class="list-group-item">Total Posts
-                      <p>30</p>
-                    </li>
-                     <li class="list-group-item">
-                       <h8></h8>
-                     </li>
-                  </ul>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Contact</a>
+              </li>
+              <!--<li class="nav-item">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+              </li> -->
+            </ul>
+            <div class="form-inline mt-2 mt-md-0">
+              <a href="./admin.html" class="" aria-pressed="true"  id="username">
+                <img src="./photos/avatar.ico" id="user-icon">Username
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div id="content">
+        <div class="container mx-auto" id="content-body">
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="card" id="personal-card">
+                <div class="gradient">
+                <img src="./photos/avatar.ico" id="personal-photo">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-center">Username</h5>
+                  <div class="user-data text-center">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Total Users
+                        <p>10</p>
+                      </li>
+                      <li class="list-group-item">Total Posts
+                        <p>30</p>
+                      </li>
+                       <li class="list-group-item">
+                         <h8></h8>
+                       </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-sm-9" id="manage">
-            <div class="card" id="total-users">
-              <h5 class="card-title">Total Users
-                <span class="card-subtitle mb-2">All users in the database</span>
-              </h5>
-              <button class="btn btn-primary add-element" type="submit"><i class="fas fa-plus"></i>Add user</button>
-              <div class="table-responsive">
-                <table class="table table-striped" id="users-table">
-                  <thead>
-                    <tr>
-                      <th scope="col">#</th>
-                      <th scope="col">Username</th>
-                      <th scope="col">Name</th>
-                      <th scope="col">Surname</th>
-                      <th scope="col">Email</th>
-                      <th scope="col">Action</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>markousss</td>
-                      <td>Mark</td>
-                      <td>Otto</td>
-                      <td>example1@gmail.com</td>
-                      <td>
-                        <button class="delete-button" type="button"><i class="fas fa-trash-alt"></i>Delete</button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>mr_Jacob</td>
-                      <td>Jacob</td>
-                      <td>Thornton</td>
-                      <td>example2@gmail.com</td>
-                      <td>
-                        <button class="delete-button" type="button"><i class="fas fa-trash-alt"></i>Delete</button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>The Birdman</td>
-                      <td>Larry</td>
-                      <td>Bird</td>
-                      <td>example3@gmail.com</td>
-                      <td>
-                        <button class="delete-button" type="button"><i class="fas fa-trash-alt"></i>Delete</button>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+            <div class="col-sm-9" id="manage">
+              <div class="card" id="total-users">
+                <h5 class="card-title">Total Users
+                  <span class="card-subtitle mb-2">All users in the database</span>
+                </h5>
+                <button class="btn btn-primary add-element" type="submit"><i class="fas fa-plus"></i>Add user</button>
+                <div class="table-responsive">
+                  <table class="table table-striped" id="users-table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Username</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Surname</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>markousss</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>example1@gmail.com</td>
+                        <td>
+                          <button class="delete-button" type="button"><i class="fas fa-trash-alt"></i>Delete</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>mr_Jacob</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>example2@gmail.com</td>
+                        <td>
+                          <button class="delete-button" type="button"><i class="fas fa-trash-alt"></i>Delete</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>The Birdman</td>
+                        <td>Larry</td>
+                        <td>Bird</td>
+                        <td>example3@gmail.com</td>
+                        <td>
+                          <button class="delete-button" type="button"><i class="fas fa-trash-alt"></i>Delete</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
-            </div>
-            <div class="card" id="total-posts">
-              <h5 class="card-title">Total Posts
-                <span class="card-subtitle mb-2">All posts in the database</span>
-              </h5>
-              <div class="table-responsive">
-                <table class="table table-striped" id="posts-table">
-                  <thead>
-                    <tr>
-                      <th scope="col">#</th>
-                      <th scope="col">Title</th>
-                      <th scope="col">Username</th>
-                      <th scope="col">Category</th>
-                      <th scope="col">Action</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Freedom of Expression</td>
-                      <td>markousss</td>
-                      <td>Peace</td>
-                      <td>
-                        <button class="delete-button" type="button"><i class="fas fa-trash-alt"></i>Delete</button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>United Nations adopts Declaration on Rights of Indegenous Peoples</td>
-                      <td>mr_Jacob</td>
-                      <td>Peace</td>
-                      <td>
-                        <button class="delete-button" type="button"><i class="fas fa-trash-alt"></i>Delete</button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>Women mush have the their 'rightful place' at the heart of building peace and security</td>
-                      <td>markousss</td>
-                      <td>Justice</td>
-                      <td>
-                        <button class="delete-button" type="button"><i class="fas fa-trash-alt"></i>Delete</button>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+              <div class="card" id="total-posts">
+                <h5 class="card-title">Total Posts
+                  <span class="card-subtitle mb-2">All posts in the database</span>
+                </h5>
+                <div class="table-responsive">
+                  <table class="table table-striped" id="posts-table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Username</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Freedom of Expression</td>
+                        <td>markousss</td>
+                        <td>Peace</td>
+                        <td>
+                          <button class="delete-button" type="button"><i class="fas fa-trash-alt"></i>Delete</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>United Nations adopts Declaration on Rights of Indegenous Peoples</td>
+                        <td>mr_Jacob</td>
+                        <td>Peace</td>
+                        <td>
+                          <button class="delete-button" type="button"><i class="fas fa-trash-alt"></i>Delete</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Women mush have the their 'rightful place' at the heart of building peace and security</td>
+                        <td>markousss</td>
+                        <td>Justice</td>
+                        <td>
+                          <button class="delete-button" type="button"><i class="fas fa-trash-alt"></i>Delete</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div id="footer">
-      <footer id="footer-body">
-        <div class="row">
-          <div class="col-3 footer-logo">
-            <a href="./index.html">
-              <img src="./photos/favicon.ico" alt="Peace Icon" id="footer-icon">
-            </a>
+      <div id="footer">
+        <footer id="footer-body">
+          <div class="row">
+            <div class="col-3 footer-logo">
+              <a href="./index.html">
+                <img src="./photos/favicon.ico" alt="Peace Icon" id="footer-icon">
+              </a>
+            </div>
+            <div class="col-9 text-right footer-media">
+              <a href="https://www.facebook.com/unitednations" target="_blank" id="footer-facebook">
+                <i class="fa fa-facebook-f"></i>
+              </a>
+              <a href="https://twitter.com/UN" target="_blank" id="footer-twitter">
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a href="https://www.instagram.com/unitednations/" target="_blank" id="footer-instagram">
+                <i class="fa fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/united-nations" target="_blank" id="linkedin">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </div>
           </div>
-          <div class="col-9 text-right footer-media">
-            <a href="https://www.facebook.com/unitednations" target="_blank" id="footer-facebook">
-              <i class="fa fa-facebook-f"></i>
-            </a>
-            <a href="https://twitter.com/UN" target="_blank" id="footer-twitter">
-              <i class="fa fa-twitter"></i>
-            </a>
-            <a href="https://www.instagram.com/unitednations/" target="_blank" id="footer-instagram">
-              <i class="fa fa-instagram"></i>
-            </a>
-            <a href="https://www.linkedin.com/company/united-nations" target="_blank" id="linkedin">
-              <i class="fa fa-linkedin"></i>
-            </a>
-          </div>
-        </div>
-      </footer>
+        </footer>
+      </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>
