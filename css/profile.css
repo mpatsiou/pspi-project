@@ -55,6 +55,7 @@ Profile Card*/
 /* Manage card */
 .col-sm-9 .card {
   padding: 10px;
+  margin-bottom: 5%;
 }
 
 #manage .card-subtitle {
