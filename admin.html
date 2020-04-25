@@ -6,12 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="./css/base.css" />
+  <link rel="stylesheet" type="text/css" href="./css/profile.css" />
   <link rel="shortcut icon" type="image/x-icon" href="./photos/favicon.ico" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/8e2d46eee2.js" crossorigin="anonymous"></script>
   <script src="./js/validForm.js"></script>
 </head>
 <body>
@@ -37,12 +38,30 @@
             </li> -->
           </ul>
           <div class="form-inline mt-2 mt-md-0">
-            <a href="./admin.html" class="" aria-pressed="true" id="username">Username</a>
+            <a href="./admin.html" class="" aria-pressed="true"  id="username">
+              <i class="fas fa-user-tie" id="user-icon"></i>Username
+            </a>
           </div>
         </div>
       </nav>
     </div>
     <div id="content">
+      <div class="container mx-auto" id="content-body">
+        <div class="row">
+          <div class="col-3">
+            <div class="card" id="personal-card">
+              <img src="./photos/avatar.ico" id="personal-photo">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-8">
+          </div>
+        </div>
+      </div>
     </div>
     <div id="footer">
       <footer  id="footer-body">
