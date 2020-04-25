@@ -110,6 +110,8 @@
   border: 0px;
   border-radius: 18rem;
   background-color: #C0C0C0;
+  width: 98%;
+
 }
 
 .feed-avatar {
@@ -120,10 +122,43 @@
   margin-top: 2%;
   margin-left: 2%;
   margin-right: 3%;
-  
 }
 
 .top-posts {
   margin-left: 5%;
   margin-right: 5%;
+}
+
+@media only screen and (max-width: 661px) {
+  .column-1 {
+    background-color: black;
+  }
+}
+
+.topics {
+  color: black;
+}
+
+.UN-logo {
+  border-radius: 100%;
+  width: 100px;
+  margin-left: 50px;
+
+}
+
+.UN-tittle {
+  font-weight: bold;
+  font-size: 30px;
+  color: black;
+}
+
+.tittle {
+  border: 1px;
+  border-style: none solid none none;
+}
+
+.tittle-description {
+  font-size: 20px;
+  font-weight: bold;
+  color: #262626
 }
