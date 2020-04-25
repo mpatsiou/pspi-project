@@ -1,3 +1,4 @@
+
 .fas {
   border: transparent;
   background-color: white;
@@ -47,8 +48,7 @@
 }
 
 .card-top-posts {
-  top:2%;
-  text-align: center;
+  top: 2%;
 }
 
 /*News feed*/
@@ -111,7 +111,6 @@
   border-radius: 18rem;
   background-color: #C0C0C0;
   width: 98%;
-
 }
 
 .feed-avatar {
@@ -124,45 +123,32 @@
   margin-right: 3%;
 }
 
-.top-posts {
-  margin-left: 5%;
-  margin-right: 5%;
-}
 
-@media only screen and (max-width: 661px) {
-  .column-1 {
-    background-color: black;
-  }
-}
-
-.topics {
-  color: black;
-}
-
-.UN-logo {
+/* Page's Tittle */
+#UN-logo {
   border-radius: 100%;
   width: 100px;
-  margin-left: 50px;
-
+  margin-left: 40%;
 }
 
-.UN-tittle {
-  font-weight: bold;
-  font-size: 30px;
+#UN-tittle {
   color: black;
+  text-decoration: none;
+  font-size: 33px;
+  font-weight: bold;
 }
 
-.tittle {
-  margin-top: 2%;
+#page-header-separator {
   border: 1px;
   border-style: none solid none none;
 }
 
-.tittle-description {
+#header-description {
   font-size: 20px;
   font-weight: bold;
   color: #262626;
 }
+
 
 #post-compose {
   border-radius: 1rem;
@@ -176,4 +162,47 @@
 .post-aligment {
   position: relative;
   left: 5%;
+}
+
+.tittle-line {
+  margin-top: 2%;
+}
+
+.top-posts {
+  margin-right: 2%;
+  margin-left: 2%;
+}
+
+.published-date {
+  font-size: 10px;
+  color:	#787878;
+  position: relative;
+  left: 36px;
+}
+
+.topics {
+  color: black;
+}
+
+ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+  margin: 0;
+  padding: 0;
+  color: #505050;
+}
+
+ol li {
+  counter-increment: my-awesome-counter;
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+ol li::before {
+  content: "0" counter(my-awesome-counter);
+  font-weight: bold;
+  font-size: 2rem;
+  font-family:serif;
+  margin-right: 0.3rem;
+  line-height: 1;
 }
