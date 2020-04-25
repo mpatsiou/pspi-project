@@ -42,7 +42,7 @@
       </nav>
     </div>
     <div id="content">
-          <div class="container">
+          <div class="container" id="tittle">
             <div class="row">
               <div class="col-2">
                 <img  class="UN-logo" src="./photos/un.png">
@@ -97,17 +97,21 @@
                   <div class="col-1 feed-avatar">
                     <img src="./photos/avatar.jpg" class="card-img-top img-feed">
                   </div>
-                  <form>
-                    <div class="form-group">
-                      <input type="post-tittle" class="form-control" placeholder="Tittle">
-                    </div>
-                    <div class="form-group">
-                      <textarea class="post form-control" rows="10" placeholder="What are you thinking.."> </textarea>
-                    </div>
-                     <button type="submit" class="btn btn-primary">Post</button>
-                  </form>
+                  <div class="col-10 py-1 px-lg-2" id="form-align">
+                    <form>
+                      <div class="form-group post-aligment">
+                        <input type="post-tittle" class="form-control" placeholder="Tittle">
+                      </div>
+                      <div class="form-group post-aligment">
+                        <textarea class="form-control" rows="10" id="post-compose" placeholder="What are you thinking.."> </textarea>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Post</button>
+                    </form>
+                  </div>
                 </div>
-              </div>
+                </div>
+
+
               <div class="container buttons">
                 <div class="row btn-group">
                   <div class="col-4">
