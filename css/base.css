@@ -64,10 +64,6 @@ body {
   color: #0a0a0a;
 }
 
-.nav-item {
-  margin: 0px 5px 0px 5px;
-}
-
 #header .form-control {
   border-radius: 20px;
 }
@@ -75,18 +71,12 @@ body {
 .navbar .navbar-toggler {
   color: white;
   font-size: 12px;
-  margin-right: 30px;
-  width: 30px;
-  height: 20px;
   transition: 2s background-color;
   background: black;
-  border: 0px;
-  padding-left: 10px;
 }
 
 .navbar .navbar-toggler:hover {
   background: -webkit-linear-gradient(bottom, #7579ff, #b224ef);
-  border: 0px;
 }
 
 #collapsibleNavbar {
@@ -144,9 +134,6 @@ body {
 
 #header .btn {
   color: white;
-  font-size: 12px;
+  font-size: 15px;
   margin-right: 30px;
-  width: 70px;
-  height: 30px;
-  margin-bottom: 2px;
 }

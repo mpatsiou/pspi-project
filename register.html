@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <title>Freedom</title>
-    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="./css/base.css" />
-    <link rel="stylesheet" type="text/css" href="./css/register.css" />
+    <link rel="stylesheet" type="text/css" href="./css/auth.css" />
     <link rel="shortcut icon" type="image/x-icon" href="./photos/favicon.ico" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -33,12 +32,9 @@
               <li class="nav-item">
                 <a class="nav-link disabled" href="#">Contact</a>
               </li>
-              <!--<li class="nav-item">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-              </li> -->
             </ul>
             <div class="form-inline mt-2 mt-md-0">
-              <a href="./login.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" id="signin-button">Sign in</a>
+              <a href="./login.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" id="login-button">Sign in</a>
             </div>
           </div>
         </nav>
@@ -55,20 +51,20 @@
                 <div class="form-row">
                   <div class="form-group  col-md-6">
                     <label for="signup-name">Name</label>
-                    <input name="name" type="text" class="form-control" id="signup-name" required>
+                    <input name="name" type="text" placeholder="Enter your name" class="form-control" id="signup-name" required>
                   </div>
                   <div class="form-group col-md-6">
                     <label for="signup-surname">Surname</label>
-                    <input name="surname" type="text" class="form-control" id="signup-surname">
+                    <input name="surname" type="text" placeholder="Enter your surname" class="form-control" id="signup-surname">
                   </div>
                 </div>
                 <div class="form-group">
                   <label for="signup-username">Username</label>
-                  <input name="username" type="text" class="form-control" id="signup-username" placeholder="Pick something unique">
+                  <input name="username" type="text" placeholder="Enter a unique username" class="form-control" id="signup-username">
                 </div>
                 <div class="form-group">
-                  <label for="signup-username">Email</label>
-                  <input name="email" type="text" class="form-control" id="signup-email" placeholder="Pick something personal">
+                  <label for="signup-email">Email</label>
+                  <input name="email" type="text" placeholder="Enter your email" class="form-control" id="signup-email">
                 </div>
                 <div class="form-row">
                   <div class="form-group col-md-6">
@@ -112,7 +108,7 @@
               <a href="https://www.instagram.com/unitednations/" target="_blank" id="footer-instagram">
                 <i class="fa fa-instagram"></i>
               </a>
-              <a href="https://www.linkedin.com/company/united-nations" target="_blank" id="linkedin">
+              <a href="https://www.linkedin.com/company/united-nations" target="_blank" id="footer-linkedin">
                 <i class="fa fa-linkedin"></i>
               </a>
             </div>
