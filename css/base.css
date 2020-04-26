@@ -150,3 +150,5 @@ min-height: 90%;
   height: 30px;
   margin-bottom: 2px;
 }
+
+button:focus {outline:0;}
