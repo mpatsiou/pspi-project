@@ -13,8 +13,8 @@ body {
 }
 
 #wrapper {
-height: 100%;
-position: relative;
+  height: 100%;
+  position: relative;
 }
 
 .row {
@@ -23,8 +23,8 @@ position: relative;
 
 /*Form*/
 #content {
-padding: 10px;
-min-height: 90%;
+  padding: 10px;
+  min-height: 90%;
 }
 
 #welcome {
