@@ -83,6 +83,10 @@ body {
   padding-left: 20px;
 }
 
+.navbar {
+  z-index: 1;
+}
+
 /*Footer*/
 #footer {
   margin-top: 6%;
