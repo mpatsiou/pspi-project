@@ -1,50 +1,81 @@
+@media screen and (max-width: 600px) {
+  .card-top-posts {
+    margin-top: 13%;
+  }
+}
 
+@media screen and (max-width: 1000px) {
+  .own-post-btn {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .img-feed {
+    margin-top: 3%;
+  }
+}
+
+/* font awesome icons */
 .fas {
   border: transparent;
   background-color: white;
   color: blue;
 }
 
-#content .card {
-  background-color: white;
-}
-
+/* ID card */
 .list-group-item {
   opacity: 0.8;
   color: #808080;
 }
 
-.card-text {
+#view-profile {
+  font-size: 85%;
+  color: #1E90FF;
+}
+
+/* The blue line in ID card */
+.gradient {
+  background: linear-gradient(blue 40%, white 0%);
+}
+
+/* Username styles */
+#ID-header {
   font-weight: bold;
   font-size: 20px;
 }
 
-.card-header {
-  font-weight: bold;
-  text-align: center;
-  font-size: 17px;
-}
-
-.card-img-top {
+/* ID photo */
+#card-img-top {
   width: 50%;
   border-radius: 100%;
   margin-top: 9%;
 }
 
+/* User's feed Avatar */
 .img-feed {
   width: 30px;
   border-radius: 50%;
+  margin-top: 90%;
 }
 
+/*ID card aligment */
 .card-id {
   text-align: center;
   top: 2%;
   border: 0px;
 }
 
+/* Text of Suggestions */
 .card-suggestions {
   top: 3%;
   text-align: center;
+}
+
+#suggestions-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
 }
 
 .card-top-posts {
@@ -52,15 +83,15 @@
 }
 
 /*News feed*/
-.own-post {
+#compose {
   top: 2%;
 }
 
-.first-post {
+#first-post {
   top: 3%;
 }
 
-.second-post {
+#second-post {
   top: 4%;
 }
 
@@ -75,23 +106,8 @@
   border-radius: 50%;
 }
 
-#kissa-icon {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-}
-
 .left-sidebar {
   width: 60%;
-}
-
-.view-profile {
-  font-size: 85%;
-  color: #1E90FF;
-}
-
-.gradient {
-  background: linear-gradient(blue 40%, white 0%);
 }
 
 .top-text-description {
@@ -99,33 +115,22 @@
   color: #808080;
 }
 
-.btn-group {
-  background-color: white;
-  width: 25%;
-  left: 5%;
-}
-
-.form-control {
-  margin-top: 2%;
-  margin-bottom: 3%;
-  border: 0px;
-  border-radius: 18rem;
-  width: 98%;
-  border: 1px solid;
-}
-
 .feed-avatar {
   margin-top: 1%;
 }
 
 .post-paragraphs {
-  margin-top: 2%;
-  margin-left: 2%;
-  margin-right: 3%;
+  margin-top: 3%;
+  margin-left: 4%;
+  margin-right: 4%;
 }
 
-
 /* Page's Tittle */
+.tittle-line {
+  margin-top: 2%;
+  min-width: 1000px;
+}
+
 #UN-logo {
   border-radius: 100%;
   width: 100px;
@@ -150,6 +155,15 @@
   color: #262626;
 }
 
+/*form to compose article */
+.form-control {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  border: 0px;
+  border-radius: 18rem;
+  width: 98%;
+  border: 1px solid;
+}
 
 #post-compose {
   border-radius: 1rem;
@@ -165,8 +179,11 @@
   left: 5%;
 }
 
-.tittle-line {
-  margin-top: 2%;
+/* List of Top Posts */
+.card-header {
+  font-weight: bold;
+  text-align: center;
+  font-size: 17px;
 }
 
 .top-posts {
@@ -184,6 +201,7 @@
 
 .topics {
   color: black;
+  overflow: auto;
 }
 
 ol {
@@ -207,4 +225,14 @@ ol li::before {
   font-family:serif;
   margin-right: 0.3rem;
   line-height: 1;
+}
+
+/*Like Comment Share Buttons */
+#btn-group {
+ text-align: left;
+ padding-left: 10%;
+}
+
+.btn-post {
+  display: inline-block;
 }
