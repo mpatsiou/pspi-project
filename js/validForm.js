@@ -1,12 +1,17 @@
 $(() => {
-  const login = $(".signin-form submit")[0]
+  const login = $(".login-form submit")[0]
   if (login) {
     $(login).click(validateLoginForm)
   }
 
-  const register = $(".signup-form submit")[0]
+  const register = $(".register-form submit")[0]
   if (register) {
     $(register).click(validateRegisterForm)
+  }
+
+  const contact_form = $("form submit")[0]
+  if (contact_form) {
+    $(contact_form).click(validateContactForm)
   }
 })
 
@@ -30,7 +35,15 @@ const validateLoginForm = () => {
   validateEmail()
 }
 
-/** 
+// Contact form validation
+const validateContactForm = () => {
+  flushErrors()
+  validateEmptyInputs()
+  validateEmail()
+  validateTextarea()
+}
+
+/**
  * Helper functions
  */
 
@@ -48,6 +61,7 @@ const validateEmptyInputs = () => {
 // Validate email
 const validateEmail = () => {
   let input = $('input[name="email"]')
+  //Email regular expression
   let regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/
 
   if (!regex.test(input.val())) {
@@ -58,8 +72,9 @@ const validateEmail = () => {
 // Generate error by adding is-invalid class and generating adding error div
 const genError = (input, error) => {
   //Return if error already exists
-  if ($(input).next().hasClass('invalid-feedback'))
+  if ($(input).next().hasClass('invalid-feedback')) {
     return
+  }
 
   $(input).addClass('is-invalid')
   $(input).after(`<div class="invalid-feedback">${error}</div>`)
@@ -70,5 +85,13 @@ const flushErrors = () => {
   for (const input of $('input')) {
     $(input).removeClass('is-invalid')
     $('.invalid-feedback').remove()
+  }
+}
+
+const validateTextarea = () => {
+  let text = $('textarea')[0]
+  const isEmpty = text => text.value.length == 0
+  if (isEmpty(text)) {
+    genError(text, "Fill the above")
   }
 }
