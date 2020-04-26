@@ -94,6 +94,4 @@ const validateTextarea = () => {
   if (isEmpty(text)) {
     genError(text, "Fill the above")
   }
-
-
 }
