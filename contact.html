@@ -1,16 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <title>Contact us</title>
-    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="./css/base.css" />
     <link rel="shortcut icon" type="image/x-icon" href="./photos/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="./css/base.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="./js/validForm.js"></script>
   </head>
@@ -30,7 +27,7 @@
                 <a class="nav-link" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="./contact.html">Contact</a>
+                <a class="nav-link" href="./contact.html">Contact</a>
               </li>
             </ul>
             <div class="form-inline mt-2 mt-md-0">
@@ -39,30 +36,26 @@
           </div>
         </nav>
       </div>
-      <div id="contact-content" class="content">
-        <div class="conteiner">
-          <div class="row justify-content-md-center">
-            <div class="form-group col-md-6">
-              <form onsubmit = "return check(); contact-form">
-                <div class="form-group">
-                  <h3 class="text-center" id="welcome">Contact Form </h3>
-                  <label for="name">Name</label>
-                  <input name="name" type="text" class="form-control" id="contact-name" placeholder="Your name...">
-                </div>
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input name="email" type="text" class="form-control" id="contact-email" placeholder="Your email...">
-                </div>
-                <div class="form-group">
-                  <label for="comment">Comment</label>
-                  <textarea name="comment" type="text" value="" class="form-control" id="comment" rows="10" placeholder="Your comment..."></textarea>
-                </div>
-                <div class="text-center form-group">
-                  <submit type="submit" class="col-md-6 btn btn-primary submit" id="signup">Send</submit>
-                </div>
-              </form>
+      <div id="contact-content" class="content row justify-content-md-center">
+        <div class="form-group col-md-6">
+          <form>
+            <div class="form-group">
+              <h3 class="text-center" id="welcome">Contact Form </h3>
+              <label for="name">Name</label>
+              <input name="name" type="text" class="form-control" id="contact-name" placeholder="Enter your name">
             </div>
-          </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input name="email" type="text" class="form-control" id="contact-email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+              <label for="comment">Comment</label>
+              <textarea name="comment" type="text" value="" class="form-control" id="comment" rows="10" placeholder="Enter your message"></textarea>
+            </div>
+            <div class="text-center form-group">
+              <submit type="submit" class="col-md-6 btn btn-primary submit" id="signup">Send</submit>
+            </div>
+          </form>
         </div>
       </div>
       <div id="footer">
