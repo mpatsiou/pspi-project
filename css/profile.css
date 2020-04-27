@@ -41,10 +41,6 @@ Profile Card*/
   background-image: linear-gradient(hsl(238, 54%, 69%) 60%, white 40%);
 }
 
-#personal-card {
-  margin-right: 10%;
-}
-
 #personal-card .card-body {
   padding: 20px 0px;
 }

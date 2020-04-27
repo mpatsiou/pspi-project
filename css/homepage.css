@@ -4,10 +4,9 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
-  .own-post-btn {
-    display: inline-block;
-  }
+.card {
+  margin-bottom: 5%;
+  padding-bottom: 2%
 }
 
 /* font awesome icons */
@@ -17,101 +16,15 @@
   color: blue;
 }
 
-/* ID card */
-.list-group-item {
-  opacity: 0.8;
-  color: #808080;
-}
-
-#view-profile {
-  font-size: 85%;
-  color: #1E90FF;
-}
-
-/* The blue line in ID card */
-.gradient {
-  background: linear-gradient(blue 40%, white 0%);
-}
-
-/* Username styles */
-#ID-header {
-  font-weight: bold;
-  font-size: 20px;
-}
-
-/* ID photo */
-#card-img-top {
-  width: 50%;
-  border-radius: 100%;
-  margin-top: 9%;
-}
-
-/* User's feed Avatar */
-.img-feed {
-  width: 30px;
-  border-radius: 50%;
-}
-
-/*ID card aligment */
-.card-id {
-  text-align: center;
-  top: 2%;
-  border: 0px;
-}
-
-/* Text of Suggestions */
-.card-suggestions {
-  top: 3%;
-  text-align: center;
-}
-
-#suggestions-icon {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-}
-
-.card-top-posts {
-  top: 2%;
-}
-
-/*News feed*/
-#compose {
-  top: 2%;
-}
-
-#first-post {
-  top: 3%;
-}
-
-#second-post {
-  top: 4%;
-}
-
-/*navbar username and avatar*/
-#avatar-navbar {
+/* User's Avatar */
+.avatar {
   width: 30px;
   height: 30px;
   border-radius: 50%;
 }
 
-.left-sidebar {
-  width: 60%;
-}
-
-.top-text-description {
-  font-size: 80%;
-  color: #808080;
-}
-
 .feed-avatar {
-  margin-top: 1%;
-}
-
-.post-paragraphs {
-  margin-top: 3%;
-  margin-left: 4%;
-  margin-right: 4%;
+  margin: 2%;
 }
 
 /* Page's Title */
@@ -121,7 +34,7 @@
 }
 
 #UN-logo {
-  border-radius: 100%;
+  border-radius: 50%;
   width: 100px;
   margin-left: 40%;
 }
@@ -134,8 +47,7 @@
 }
 
 #page-header-separator {
-  border: 1px;
-  border-style: none solid none none;
+  border-right: 1px solid;
 }
 
 #header-description {
@@ -144,28 +56,30 @@
   color: #262626;
 }
 
-/*form to compose article */
+/* Form to compose article */
+#posts .col-sm-1, #posts .col-sm, #posts .container {
+  padding: 0px;
+}
+
+.form-group {
+  padding: 2% 2% 0% 0%;
+}
+
 .form-control {
-  margin-top: 3%;
-  margin-bottom: 3%;
-  border: 0px;
-  border-radius: 0.5rem;
-  width: 98%;
-  border: 1px solid;
+  border: 1px solid #00000094;
 }
 
 #post-compose {
-  border-radius: 0.5rem;
   resize: none;
-}
-
-#form-align {
-  text-align: center;
 }
 
 .post-aligment {
   position: relative;
   left: 5%;
+}
+
+.post-paragraphs {
+  padding: 2% 2% 0% 0% ;
 }
 
 /* List of Top Posts */
@@ -214,12 +128,6 @@ ol li::before {
   font-family:serif;
   margin-right: 0.7rem;
   line-height: 1;
-}
-
-/*Like Comment Share Buttons */
-#btn-group {
- text-align: left;
- padding-left: 10%;
 }
 
 .btn-post {
