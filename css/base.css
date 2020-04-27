@@ -122,13 +122,13 @@ body {
 }
 
 /*Buttons */
-.content submit:hover, #header .btn:hover {
+.content submit:hover, .btn:hover {
   border-radius: 30px;
   background: -webkit-linear-gradient(bottom, #7579ff, #b224ef);
   border: 0px;
 }
 
-.content submit, #header .btn {
+.content submit, .btn {
   transition: 2s background-color;
   border-radius: 30px;
   background: black;
