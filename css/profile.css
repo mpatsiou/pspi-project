@@ -26,7 +26,7 @@ Profile Card*/
   border-radius: 3px;
 }
 
-#content-body {
+#content-body, #admin-content {
   margin-top: 10%;
 }
 
@@ -58,6 +58,11 @@ Profile Card*/
   margin-bottom: 15%;
 }
 
+.col-sm-3 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 /* Manage card */
 .col-sm-9 .card {
   padding: 10px;
@@ -82,8 +87,4 @@ Profile Card*/
   width: 80px;
   border: none;
   background: transparent;
-}
-
-#admin-content {
-  margin-top: 5%;
 }
