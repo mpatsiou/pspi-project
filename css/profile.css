@@ -41,6 +41,10 @@ Profile Card*/
   background-image: linear-gradient(hsl(238, 54%, 69%) 60%, white 40%);
 }
 
+#personal-card {
+  margin-right: 10%;
+}
+
 #personal-card .card-body {
   padding: 20px 0px;
 }
@@ -80,8 +84,10 @@ Profile Card*/
 
 .delete-button {
   width: 80px;
-  height: 25px;
-  font-size: 80%;
-  margin-left: 0px;
-  margin-right: 0px
+  border: none;
+  background: transparent;
+}
+
+#admin-content {
+  margin-top: 5%;
 }
