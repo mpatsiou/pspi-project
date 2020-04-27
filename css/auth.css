@@ -1,3 +1,10 @@
+/* Register */
+#register-phrase {
+  opacity: 0.9;
+  font-style: italic;
+}
+
+/* Login */
 #check-row {
   margin-top: 2%;
   padding: 0px;
@@ -33,6 +40,6 @@
   margin: 40px 0px 20px 0px;
 }
 
-#txt1 {
-  color: blue;
+#forgot-password > a {
+  color: #f2f4f6;
 }
