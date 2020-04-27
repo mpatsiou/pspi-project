@@ -1,9 +1,3 @@
-@media screen and (max-width: 600px) {
-  .card-top-posts {
-    margin-top: 13%;
-  }
-}
-
 .card {
   margin-bottom: 5%;
   padding-bottom: 2%
