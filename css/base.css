@@ -147,3 +147,5 @@ body {
   background-position: left;
   background-size: 25%;
 }
+
+button:focus {outline:0;}
