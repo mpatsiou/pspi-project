@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sign in</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/base.css" />
+    <link rel="stylesheet" type="text/css" href="./css/auth.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="./photos/favicon.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/8e2d46eee2.js" crossorigin="anonymous"></script>
+    <script src="./js/validForm.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="header">
+        <nav class="navbar navbar-expand-md mb-4 bg-light">
+          <img src="./photos/favicon.ico" alt="Peace Icon" id="peace-icon">
+          <div class="toogle-button">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <i class="fa fa-bars"></i>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="./contact.html">Contact</a>
+              </li>
+            </ul>
+            <div class="mt-md-0">
+              <a href="./register.html" class="btn btn-primary btn-lg active" role="button" id="signup-button">Register</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="content">
+        <div class="row">
+          <div class="mx-auto">
+            <h1 class='text-center' id='welcome'><span>Welcome</span></h1>
+            <p class='lead' id='introduction'>Welcome to the most reliable blog about freedom and justice in the UN</p>
+            <form class="form login-form">
+              <div class="mx-auto col-md-7 form-group">
+                <input name="username" type="text" class="form-control" id="login-name" required placeholder="username">
+              </div>
+              <div class="mx-auto col-md-7 form-group">
+                <input name="user-password" type="password" class="form-control" id="login-password" required placeholder="password">
+                <div class="container row" id="check-row">
+                  <div class="form-check col text-left">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck" >Remember me</label>
+                  </div>
+                  <div class="col text-right" id="forgot-password">
+                    <a href="#">Forgot Password?</a>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center form-group">
+                <submit type="submit" class="col-md-6 btn btn-primary submit" id="loggin">Log in</submit>
+              </div>
+              <div class="text-center p-t-46 p-b-20" id="or">
+                <span>or sign in using</span>
+              </div>
+              <div class="text-center login-form">
+                <div class="btn btn-primary media-buttons" id="fb-button">
+                  <a href="#" id="facebook">
+                    <i class="fa fa-facebook-f"></i>
+                  </a>
+                </div>
+                <div class="btn btn-primary media-buttons" id="google-button">
+                  <a href="#" id="google">
+                    <i class="fa fa-google-plus"></i>
+                  </a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <footer id="footer-body">
+          <div class="row">
+            <div class="col-3">
+              <a href="./register.html">
+                <img src="./photos/favicon.ico" alt="Peace Icon" id="footer-icon">
+              </a>
+            </div>
+            <div class="col-9 text-right footer-media">
+              <a href="https://www.facebook.com/unitednations" target="_blank">
+                <i class="fa fa-facebook-f"></i>
+              </a>
+              <a href="https://twitter.com/UN" target="_blank">
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a href="https://www.instagram.com/unitednations/" target="_blank">
+                <i class="fa fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/united-nations" target="_blank">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
