@@ -12,3 +12,4 @@ app.use('/session', Routers.session)
 app.use('/friendship', Routers.friendship)
 
 app.listen(3000)
+console.log('Magic is happening...')
