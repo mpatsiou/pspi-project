@@ -9,9 +9,9 @@ CREATE TABLE IF NOT EXISTS users (
 );
 
 CREATE TABLE IF NOT EXISTS posts (
-    id int primary key,
+    id int primary key AUTO_INCREMENT,
     user_id int not null,
-    post varchar(255) not null,
+    text varchar(255) not null,
     likes int not null,
     foreign key(user_id) references users(id)
 );
