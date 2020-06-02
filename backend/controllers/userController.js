@@ -1,21 +1,27 @@
-const user = require('../models/user')
+const users = require('../models/user')
 
-const getUser =  (req, res) => {
-    console.log(req.params);
-    //console.log(user.getUser(req.params));
+const getUser =  async (req, res) => {
+    user = await (users.getUser(req.query.id))
+    console.log(user);
+
+    res.json({statusText: "Getting user"})
 }
 
 const createUser = (req, res) => {
-    user.createUser(req.body.email, req.body.username, req.body.password, req.body.name, req.body.surname)
-    res.json({statusText: "User creating"});
+    users.createUser(req.body.email, req.body.username, req.body.password, req.body.name, req.body.surname)
+    res.json({statusText: "User creating"})
 }
 
 const updateUser =  (req, res) => {
-    console.log("updating User")
+    users.updateUser(req.body)
+    res.json({
+        status: "200",
+        statusText: "Updating user"
+    })
 }
 
 const deleteUser =  (req, res) => {
-    user.deleteUser(req.body.id)
+    users.deleteUser(req.body.id)
     res.json({statusText: "User deleting"})
 }
 
