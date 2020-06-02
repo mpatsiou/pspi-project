@@ -1,20 +1,13 @@
 const query = require('./db')
 
+// null if user not found else user
 const getUser = async (id) => {
-    if (validId(id)) {
-        return query(`
-            select * from users
-            where id = ?`,
-            [id])
-    }
-}
+    const res = await query(`
+        select * from users
+        where id = ?`,
+        [id])
 
-const validId = async (id) => {
-    ids = await query(`select id from users`)
-    for (const i of ids) {
-        if (id == i.id) return true
-        return false
-    }
+    return res.length == 0 ? null : res[0]
 }
 
 const createUser =  async (email, username, password, name, surname) => {
@@ -33,36 +26,17 @@ const deleteUser = async (id) => {
     )
 }
 
-const updateUser = async (object) => {
-    if (validId(object.id)) {
-        if(object["name"]) {
-            await update(object.id, "name",object.name)
-        }
-        if(object["surname"]) {
-            //await update(object.id, "surname",object.surname)
-        }
-        if(object["username"]) {
-            await update(object.id, "username",object.name)
-        }
-        if(object["email"]) {
-            await update(object.id, "email",object.name)
-        }
-        if(object["password"]) {
-            await update(object.id, "password",object.name)
-        }
+const updateUser = async (id, forUpdate = {}) => {
+    let q = "update users set "
+    for (const key in forUpdate) {
+        q += ` ${key} = ? `
     }
-}
+    q += `where id = ?`
+    console.log(forUpdate)
 
-const update = async (id, column_name, update) => {
-    console.log(id, typeof id);
-    console.log(column_name, typeof column_name);
-    console.log(update, typeof update);
-    return query(`
-        update users
-        set ? = ?
-        where id = ?`,
-        [column_name, update, id]
-    )
+    const params = [...Object.values(forUpdate), id]
+    console.log(q, params)
+    return query(q, params)
 }
 
 module.exports = {
