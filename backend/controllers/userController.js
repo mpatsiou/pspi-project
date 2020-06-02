@@ -1,6 +1,6 @@
 const users = require('../models/user')
 
-const getUser =  async (req, res) => {
+const getUser = async (req, res) => {
     const user = await (users.getUser(req.query.id))
 
     if (user) {
@@ -13,7 +13,7 @@ const getUser =  async (req, res) => {
     })
 }
 
-const createUser = (req, res) => {
+const createUser = async (req, res) => {
     const required = ['email', 'username', 'password', 'name', 'surname']
     for (param of required) {
         if (!req.body[param]) {
@@ -22,7 +22,12 @@ const createUser = (req, res) => {
         }
     }
 
-    users.createUser(req.body.email, req.body.username, req.body.password, req.body.name, req.body.surname)
+    try {
+        await users.createUser(req.body.email, req.body.username, req.body.password, req.body.name, req.body.surname)
+    }
+    catch (e) {
+        res.status(400).json({"statusText": e})
+    }
     res.json({statusText: "User created"})
 }
 
