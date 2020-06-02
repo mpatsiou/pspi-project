@@ -1,42 +1,33 @@
-const query = require('./db')
+const db = require('./db')
 
 // null if user not found else user
 const getUser = async (id) => {
-    const res = await query(`
-        select * from users
-        where id = ?`,
-        [id])
+    const res = await db('users').select().where({ id })
+    console.log(res)
 
     return res.length == 0 ? null : res[0]
 }
 
 const createUser =  async (email, username, password, name, surname) => {
-    return query(`
-        insert into users (email, name, role, surname, username, password)
-        values (?, ?, ?, ?, ?, ?)`,
-        [email, name, "normal", surname, username, password]
-    )
+    return db('users')
+        .insert({
+            email,
+            username,
+            password,
+            name,
+            surname
+        })
 }
 
 const deleteUser = async (id) => {
-    return query(`
-        delete from users
-        where id = ?`,
-        [id]
-    )
+    return db('users')
+        .delete()
+        .where({ id })
+        .limit(1)
 }
 
-const updateUser = async (id, forUpdate = {}) => {
-    let q = "update users set "
-    for (const key in forUpdate) {
-        q += ` ${key} = ? `
-    }
-    q += `where id = ?`
-    console.log(forUpdate)
-
-    const params = [...Object.values(forUpdate), id]
-    console.log(q, params)
-    return query(q, params)
+const updateUser = async (id, params = {}) => {
+    return db('users').update(params).where({ id })
 }
 
 module.exports = {
