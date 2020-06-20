@@ -1,9 +1,14 @@
 const db = require('./db')
 
 // null if user not found else user
-const getUser = async (id) => {
+const getById = async (id) => {
     const res = await db('users').select().where({ id })
-    console.log(res)
+
+    return res.length == 0 ? null : res[0]
+}
+
+const getByUsername = async (username) => {
+    const res = await db('users').select().where({ username })
 
     return res.length == 0 ? null : res[0]
 }
@@ -33,6 +38,7 @@ const updateUser = async (id, params = {}) => {
 module.exports = {
     createUser,
     deleteUser,
-    getUser,
+    getById,
+    getByUsername,
     updateUser
 }

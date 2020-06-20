@@ -1,22 +1,34 @@
-const getComment =  (req, res) => {
-    console.log("getting a Comment")
+const Comment = require('../models/comment')
+
+const getComment = async  (req, res) => {
+    if (!req.query.post_id) {
+        return res.status(400).json({statusText: "Invalid Data"})
+    }
+
+    const comments = await Comment.getAllForPost(req.query.post_id)
+    req.json({comments})
 }
 
-const createComment =  (req, res) => {
-    console.log("creating a Comment")
+const createComment = async (req, res) => {
+    if (!req.query.post_id || !req.query.content) {
+        return res.status(400).json({statusText: "Invalid Data"})
+    }
+
+    await Comment.create(req.user.id, req.body.post_id, req.body.content)
+    req.json({'statusText': "Comment created"})
 }
 
-const updateComment =  (req, res) => {
-    console.log("updating a Comment")
-}
+const deleteComment = async (req, res) => {
+    if (!req.query.post_id) {
+        return res.status(400).json({statusText: "Invalid Data"})
+    }
 
-const deleteComment =  (req, res) => {
-    console.log("deleting a Comment")
+    await Comment.del(req.body.post_id)
+    req.json({'statusText': "Comment deleted"})
 }
 
 module.exports = {
     getComment,
     createComment,
-    updateComment,
     deleteComment
 }

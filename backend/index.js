@@ -1,8 +1,14 @@
 const express = require('express')
 const bodyParser = require('body-parser')
+const expressSession = require('express-session')
 const Routers = require('./routers/index.js')
+const passport = require('./models/auth')
 
 const app = express()
+
+app.use(expressSession({secret: "test", saveUninitialized: false }))
+app.use(passport.initialize())
+app.use(passport.session())
 
 app.use(bodyParser.json())
 app.use('/user', Routers.user)

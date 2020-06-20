@@ -1,27 +1,33 @@
 const post = require('../models/post')
 
 const getPost =  async (req, res) => {
-    console.log("getting a Post")
-}
-
-const createPost =  async (req, res) => {
-    if (!req.body.text || !req.body.userId) {
+    if (!req.query.id) {
         res.status(400).json({statusText: "Invalid Data"})
         return
     }
 
-    await post.create(req.body.userId, req.body.text)
+    const p = await post.get(req.query.id)
+    return p ? res.json(p) : res.status(404).json({statusText: "Post Not Found"})
+}
+
+const createPost =  async (req, res) => {
+    if (!req.body.content || !req.body.userId) {
+        res.status(400).json({statusText: "Invalid Data"})
+        return
+    }
+
+    await post.create(req.body.userId, req.body.content)
 
     res.json({statusText: "Post created"})
 }
 
 const updatePost = async (req, res) => {
-    if (!req.body.text || !req.body.id) {
+    if (!req.body.content || !req.body.id) {
         res.status(400).json({statusText: "Invalid Data"})
         return
     }
 
-    if (await post.update(req.body.id, {text: req.body.text})) {
+    if (await post.update(req.body.id, {content: req.body.content})) {
         res.json({statusText: "Post updated"})
         return
     }

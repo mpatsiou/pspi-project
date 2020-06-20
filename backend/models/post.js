@@ -6,14 +6,14 @@ const get = async (id) => {
     if (res.length == 0) {
         return null
     }
-    const {userId, text} = res.rows[0]
-    return new Post(userId, text, id)
+    const {user_id, content} = res[0]
+    return {userId: user_id , content, id}
 }
 
-const create = async (userId, text) => {
+const create = async (userId, content) => {
     return db('posts').insert({
         user_id: userId,
-        text,
+        content,
         likes: 0
     })
 }

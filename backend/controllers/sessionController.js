@@ -1,5 +1,14 @@
+const auth = require('../models/auth')
+
 const login =  (req, res) => {
-    console.log("Welcome")
+    const {username, email, name, surname } = req.user
+
+    res.send({user: {
+        username,
+        email,
+        name,
+        surname
+    }})
 }
 
 const logout =  (req, res) => {

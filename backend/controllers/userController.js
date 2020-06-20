@@ -1,7 +1,7 @@
 const users = require('../models/user')
 
 const getUser = async (req, res) => {
-    const user = await (users.getUser(req.query.id))
+    const user = await (users.getById(req.query.id))
 
     if (user) {
         res.json({ user })
