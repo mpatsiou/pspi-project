@@ -3,8 +3,20 @@ const db = require('./db')
 // null if user not found else user
 const getById = async (id) => {
     const res = await db('users').select().where({ id })
+    if (res.length == 0)  {
+        return null
+    }
+    const user = res[0]
+    console.log(user)
 
-    return res.length == 0 ? null : res[0]
+    user.followers = (await db('friendships').count('friend as cnt').where('user_id', id))[0].cnt
+    user.followees = (await db('friendships').count('friend as cnt').where('friend', id))[0].cnt
+
+    return user
+}
+
+const getAll = async () => {
+    return db('users').select()
 }
 
 const getByUsername = async (username) => {
@@ -14,7 +26,7 @@ const getByUsername = async (username) => {
 }
 
 const createUser =  async (email, username, password, name, surname) => {
-    return db('users')
+    const res = await db('users')
         .insert({
             email,
             username,
@@ -22,6 +34,8 @@ const createUser =  async (email, username, password, name, surname) => {
             name,
             surname
         })
+    
+    return res[0]
 }
 
 const deleteUser = async (id) => {
@@ -39,6 +53,7 @@ module.exports = {
     createUser,
     deleteUser,
     getById,
+    getAll,
     getByUsername,
     updateUser
 }

@@ -1,23 +1,30 @@
 const db = require('./db')
 
-const get = async (id) => {
-    const res = await db('posts').select().where({ id })
+const get = async () => {
+    return await db('posts')
+        .join('users', 'posts.user_id', 'users.id')
+        .select('users.id', 'posts.id', 'posts.content', 'users.username')
+        .orderBy('posts.id', 'desc')
+}
 
-    if (res.length == 0) {
-        return null
-    }
-    const {user_id, content} = res[0]
-    return {userId: user_id , content, id}
+const getOne = async (id) => {
+    const post = await db('posts')
+        .join('users', 'posts.user_id', 'users.id')
+        .select('users.id as userId', 'posts.id', 'posts.content', 'users.username')
+        .where('posts.id', id)
+
+    return post[0]
 }
 
 const create = async (userId, content) => {
+    console.log(userId)
+    console.log(content)
     return db('posts').insert({
         user_id: userId,
         content,
         likes: 0
     })
 }
-
 
 const del = async (id) => {
     return db('posts')
@@ -33,6 +40,7 @@ const update = async (id, params) => {
 
 module.exports = {
     create,
+    getOne,
     get,
     update,
     del,

@@ -1,4 +1,5 @@
 const users = require('../models/user')
+const session = require('../models/auth')
 
 const getUser = async (req, res) => {
     const user = await (users.getById(req.query.id))
@@ -23,12 +24,18 @@ const createUser = async (req, res) => {
     }
 
     try {
-        await users.createUser(req.body.email, req.body.username, req.body.password, req.body.name, req.body.surname)
+        const id = await users.createUser(req.body.email, req.body.username, req.body.password, req.body.name, req.body.surname)
+
+        res.json({
+            statusText: "User created", 
+            user: await users.getById(id),
+            sid: await session.createSession(id)
+        })
     }
     catch (e) {
+        console.error(e)
         res.status(400).json({"statusText": e})
     }
-    res.json({statusText: "User created"})
 }
 
 const updateUser =  async (req, res) => {
