@@ -13,7 +13,9 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <link rel="shortcut icon" type="image/x-icon" href="./photos/favicon.ico" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script type="text/javascript" src="admin.js"></script>
+    <script type="text/javascript" src="js/timeline.js"></script>
   </head>
   <body>
     <div id="wrapper">
@@ -36,7 +38,8 @@
            </ul>
            <div class="nav-link">
              <a class="nav-avatar" href="./user.html">
-               <img  alt="avatar" class="avatar" src="./photos/avatar.jpg">Username
+               <img  alt="avatar" class="avatar" src="./photos/avatar.jpg">
+                <span id="username-avatar">username</span>
              </a>
            </div>
            <div class="nav-link dropdown">
@@ -76,14 +79,14 @@
                 <h5 class="card-title text-center">Username</h5>
                 <div class="user-data text-center">
                   <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Followers
+                    <li class="followers list-group-item">Followers
                       <p>10</p>
                     </li>
-                    <li class="list-group-item">Following
+                    <li class="following list-group-item">Following
                       <p>30</p>
                     </li>
                      <li class="list-group-item">
-                       <a href="./user.html">View Profil</a>
+                       <a href="./user.html">View Profile</a>
                      </li>
                   </ul>
                 </div>
@@ -100,68 +103,6 @@
             </div>
           </div>
           <div class="col-sm-6" id="posts">
-            <div class="card" id="compose">
-              <div class="row">
-                <div class="col-sm-1 feed-avatar text-center">
-                  <img alt="avatar" src="./photos/avatar.jpg" class="avatar">
-                </div>
-                <div class="col-sm text-center">
-                  <form>
-                    <div class="form-group">
-                      <input class="form-control" type="post-title" placeholder="Title">
-                    </div>
-                    <div class="form-group">
-                      <textarea class="form-control" rows="8" id="post-compose" placeholder="What are you thinking..."> </textarea>
-                    </div>
-                    <submit class="btn btn-primary active" role="button" aria-pressed="true">Post</submit>
-                  </form>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="row">
-                <div class="col-sm-1 feed-avatar">
-                  <img alt="avatar" src="./photos/avatar.jpg" class="avatar">
-                </div>
-                <div class="col-sm">
-                  <p class="post-paragraphs"> The threats of international homicide, violence against children, human trafficking and sexual violence are important
-                      to address to promote peaceful and inclusive societies for sustainable development. They pave the way for the provision
-                      of access to justice for all and for building effective, accountable institutions at all levels.
-                  </p>
-                  <div class="btn-post">
-                    <button class="fas fa-thumbs-up"></button>
-                  </div>
-                  <div class="btn-post">
-                    <button class="fas fa-comments"></button>
-                  </div>
-                  <div class="btn-post">
-                    <button class="fas fa-share"></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="row">
-                <div class="col-sm-1 feed-avatar">
-                  <img alt="avatar" src="./photos/avatar.jpg" class="avatar">
-                </div>
-                <div class="col-sm">
-                  <p class="post-paragraphs"> While homicide and trafficking cases have seen significant progress over the past decade, there are still thousands of people at greater
-                        risk of intentional murder within Latin America, Sub-Saharan Africa and around Asia. Children’s rights violations through aggression and
-                        sexual violence continue to plague many countries around the world, especially as under-reporting and lack of data aggravate the problem.
-                  </p>
-                  <div class="btn-post">
-                    <button class="fas fa-thumbs-up"></button>
-                  </div>
-                  <div class="btn-post">
-                    <button class="fas fa-comments"></button>
-                  </div>
-                  <div class="btn-post">
-                    <button class="fas fa-share"></button>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
           <div class="col-sm-3">
             <div class="card card-top-posts">
